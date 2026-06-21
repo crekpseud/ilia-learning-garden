@@ -37,6 +37,7 @@ For this project, the pattern validates treating the vault as a Markdown codebas
 - Supports [[docs/adr/0005-treat-markdown-as-the-codebase]].
 - Supports [[docs/adr/0006-use-this-repository-as-the-seed-vault]].
 - Supports [[docs/adr/0007-use-protocol-first-top-level-structure]].
+- Related to [[wiki/synthesis/digital-garden-ethos]], which frames maintained linked knowledge as a personal, evolving, topographical space.
 - Complements this project's [[CONTEXT|Human-Contact Gate]] by adding a trust boundary missing from the original LLM Wiki pattern.
 
 ## Questions
@@ -50,4 +51,3 @@ For this project, the pattern validates treating the vault as a Markdown codebas
 
 - [[docs/research/karpathy-llm-wiki]]
 - https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f
-

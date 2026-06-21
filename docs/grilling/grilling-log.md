@@ -17,4 +17,4 @@ Resolved:
 - The repository is the seed vault and uses protocol-first top-level folders.
 - The vault is Markdown-first with attachments allowed in raw or learning areas, but not in the trusted wiki.
 - The first milestone is a protocol-only proof before building the Google Docs bridge.
-
+- Trusted knowledge should be read topographically, while workflow history remains append-only and trusted note changes happen through reviewed patches.

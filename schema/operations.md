@@ -16,6 +16,17 @@ Prepare or update the promotion review for a drafted learning packet.
 **packet.promote**:
 Promote approved learning packet output into the trusted wiki.
 
+## Concepts
+
+**concept.recognize**:
+Identify existing trusted concepts and candidate new concepts in packet material or drafts.
+
+**concept.promote**:
+Promote a human-approved candidate concept note into the trusted wiki.
+
+**concept.patch**:
+Prepare a suggested patch for an existing trusted concept note.
+
 ## Bridges
 
 **bridge.google-doc.import**:
@@ -25,4 +36,3 @@ Import a packet export from a Google Doc URL or file ID into the learning area.
 
 **wiki.lint**:
 Check the trusted wiki for missing links, orphan notes, stale claims, contradictions, duplicate concepts, and other maintenance issues.
-

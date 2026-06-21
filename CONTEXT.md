@@ -88,6 +88,18 @@ _Avoid_: Atomic note, keyword page
 A concept note suggested by a packet export or drafting step that has not yet been promoted into the trusted wiki.
 _Avoid_: Atomic note output, generated concept
 
+**Concept Recognition**:
+The agent-assisted act of noticing that packet material refers to an existing concept or may introduce a reusable new concept.
+_Avoid_: Concept promotion, automatic tagging
+
+**Concept Promotion**:
+The human-approved act of turning a candidate concept note into a trusted concept note.
+_Avoid_: Auto-create concept, extract concept
+
+**Draft Link**:
+A link to an existing trusted concept that an agent may place in draft material before promotion review.
+_Avoid_: Trusted edit, promoted link
+
 **Suggested Trusted Wiki Output**:
 Draft synthesis, concept, or patch content proposed by a packet export or drafting step before promotion review.
 _Avoid_: Final notes, generated wiki
@@ -155,3 +167,15 @@ _Avoid_: Metadata sidecar, note wrapper
 **Protocol-First Structure**:
 A vault layout where core protocol folders such as `schema`, `learning`, `raw`, and `wiki` live at the repository root instead of being hidden under app-specific or documentation folders.
 _Avoid_: App project, plugin folder
+
+**Topographical Reading**:
+The principle that trusted knowledge should be navigated through meaning, links, maps, concepts, and trails rather than reverse chronology.
+_Avoid_: Feed, timeline
+
+**Append-Only Process History**:
+The principle that important workflow events such as imports, drafts, promotions, corrections, and rejected patches are recorded as new chronological entries instead of rewriting the process record.
+_Avoid_: Activity feed, mutable history
+
+**Patch-Based Knowledge Change**:
+The principle that existing trusted notes evolve through reviewed patches that keep the current note readable while preserving semantic history in packet reviews, suggested patches, logs, and Git.
+_Avoid_: Silent rewrite, event-only projection
