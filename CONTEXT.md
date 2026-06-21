@@ -1,0 +1,157 @@
+# Learning Pipeline
+
+A local-first learning system that turns AI-mediated exploration into trusted Obsidian knowledge through explicit human contact and maintained Markdown artifacts.
+
+## Language
+
+**Learning Loop**:
+The smallest complete cycle from choosing a topic through learning it, passing a human-contact gate, and integrating approved knowledge into the trusted wiki.
+_Avoid_: Import flow, note generation pipeline
+
+**Vault Population Loop**:
+The concrete MVP path that turns a learned topic or NotebookLM-derived material into reviewed Obsidian notes.
+_Avoid_: Bulk import, migration
+
+**Learning Packet**:
+A deliberately assembled input bundle for one learning topic or episode, containing the topic, source references or materials, AI-derived artifacts, at least one human-contact artifact, and optional integration guidance.
+_Avoid_: Notebook, import, source bundle
+
+**Packet Manifest**:
+The `packet.md` file that names the packet topic, status, source tool, creation date, packet export location, and integration focus.
+_Avoid_: Packet index, metadata file
+
+**Source Record**:
+The `sources.md` file that lists the source material, references, URLs, attachments, and source provenance behind a learning packet.
+_Avoid_: Bibliography, citation file
+
+**Learning Evidence File**:
+The `human-contact.md` file that records the human-contact artifact required before promotion.
+_Avoid_: Completion note, engagement file
+
+**Promotion Decision File**:
+The `review.md` file that records which drafts, concept candidates, and suggested patches are approved or rejected for promotion.
+_Avoid_: Checklist, approval note
+
+**Packet Export**:
+A portable Markdown artifact produced by an external learning or synthesis tool that can be normalized into a learning packet. It uses fixed headings and optional YAML frontmatter so it remains readable and parseable.
+_Avoid_: NotebookLM output, pasted response
+
+**Packet Export Contract**:
+The fixed-heading Markdown shape that packet exports must follow before a bridge can normalize them into learning packets.
+_Avoid_: Prompt output, import format
+
+**Bridge**:
+An adapter that brings packet exports from an external tool or storage location into the learning area without making that external tool part of the core model.
+_Avoid_: Integration, sync
+
+**Google Docs Bridge**:
+The first bridge, which imports a packet export from a specific Google Doc URL or file ID and normalizes it into a learning packet.
+_Avoid_: Drive sync, NotebookLM integration
+
+**Import Repair**:
+An explicit LLM-assisted step that reshapes a malformed packet export into the packet export contract after validation fails.
+_Avoid_: Best-effort import, silent cleanup
+
+**Learning Area**:
+The untrusted part of the Obsidian vault where learning packets, draft notes, reflections, quiz results, and review state live before promotion.
+_Avoid_: Inbox, staging database, temp folder
+
+**Promotion**:
+The act of moving reviewed knowledge from a learning packet into the trusted wiki after the human-contact gate has passed.
+_Avoid_: Import, sync, publish
+
+**Promotion Review**:
+A Markdown review record for a learning packet that captures whether the synthesis note, concept notes, and suggested patches are approved for promotion.
+_Avoid_: Chat approval, final check
+
+**Suggested Patch**:
+A proposed change to an existing trusted wiki note that must be reviewed before it is applied.
+_Avoid_: Auto-update, rewrite
+
+**Source-List Provenance**:
+The minimum provenance record for promoted notes, linking back to the learning packet and listing the original source URLs or file paths.
+_Avoid_: Full citation graph, bibliography
+
+**Claim-Level Citation**:
+A precise citation attached to a specific claim when the claim is surprising, factual, numeric, controversial, or likely to be challenged.
+_Avoid_: Universal citation requirement
+
+**Synthesis Note**:
+A trusted wiki note that captures the reviewed understanding of one learning packet or topic.
+_Avoid_: Summary, article note
+
+**Concept Note**:
+A trusted wiki note for a reusable idea that is expected to matter beyond a single learning packet.
+_Avoid_: Atomic note, keyword page
+
+**Candidate Concept Note**:
+A concept note suggested by a packet export or drafting step that has not yet been promoted into the trusted wiki.
+_Avoid_: Atomic note output, generated concept
+
+**Suggested Trusted Wiki Output**:
+Draft synthesis, concept, or patch content proposed by a packet export or drafting step before promotion review.
+_Avoid_: Final notes, generated wiki
+
+**Canonical Title**:
+The human-readable title used as the primary identity for a trusted wiki note.
+_Avoid_: ID, slug
+
+**Alias**:
+An alternate name for a trusted wiki note that helps humans and agents recognize equivalent phrasing.
+_Avoid_: Synonym list, keyword
+
+**Human-Contact Gate**:
+The rule that knowledge cannot enter the trusted wiki until the user produces or approves at least one explicit human-contact artifact.
+_Avoid_: Approval checkbox, review step
+
+**Human-Contact Artifact**:
+A small record showing the user personally interacted with the material, such as a reflection, quiz result, correction, teach-back explanation, or approved link choice.
+_Avoid_: Completion flag, engagement metric
+
+**Pending Human Contact**:
+The state of a learning packet that has enough imported material to draft notes, but cannot be promoted because no human-contact artifact exists yet.
+_Avoid_: Incomplete import, blocked packet
+
+**Captured**:
+The learning packet state where a topic exists, but packet material is not complete enough to import or draft.
+_Avoid_: Idea, todo
+
+**Imported**:
+The learning packet state where packet export or source material exists in the learning area.
+_Avoid_: Synced, downloaded
+
+**Drafted**:
+The learning packet state where suggested trusted wiki output exists but is not yet ready or approved for promotion.
+_Avoid_: Generated, processed
+
+**Ready For Review**:
+The learning packet state where the human-contact gate has passed and drafts are ready for promotion review.
+_Avoid_: Done, complete
+
+**Promoted**:
+The learning packet state where approved knowledge has entered the trusted wiki.
+_Avoid_: Published, synced
+
+**Trusted Wiki**:
+The part of the Obsidian vault that contains reviewed, human-touched knowledge intended for future human use and AI context.
+_Avoid_: Notes folder, generated wiki
+
+**Markdown Codebase**:
+The Obsidian vault treated as the durable system of record, where Markdown files are the canonical design surface for humans, LLMs, and tools. Non-Markdown attachments may exist when referenced and contextualized by Markdown records.
+_Avoid_: Content folder, notes repository
+
+**Attachment**:
+A non-Markdown file kept in the vault to support a Markdown record, such as a PDF, image, audio file, CSV, or exported artifact.
+_Avoid_: Primary source of truth, opaque blob
+
+**Attachment Area**:
+The `raw` or `learning` location where attachments may live. Trusted wiki notes link to attachments but do not store them nearby.
+_Avoid_: Wiki assets, note attachments
+
+**Markdown Record**:
+A Markdown file that provides the canonical context, metadata, provenance, and links for a source, attachment, learning packet, or trusted note.
+_Avoid_: Metadata sidecar, note wrapper
+
+**Protocol-First Structure**:
+A vault layout where core protocol folders such as `schema`, `learning`, `raw`, and `wiki` live at the repository root instead of being hidden under app-specific or documentation folders.
+_Avoid_: App project, plugin folder
