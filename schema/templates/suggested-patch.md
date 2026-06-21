@@ -2,11 +2,10 @@
 
 ## Patch: <Existing Note Title>
 
-Target: [[wiki/...]]
+Target: path/to/existing-note.md
 
 Reason:
 
 ```diff
 ...
 ```
-
