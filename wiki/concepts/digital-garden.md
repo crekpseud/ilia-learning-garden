@@ -22,9 +22,13 @@ The concept gives this vault a human-facing metaphor for growth. It frames knowl
 
 For the learning pipeline, this matters because the system should preserve play, curiosity, and personal shape. A useful vault should grow like its gardener: structured enough to navigate, but not so rigid that tending it becomes self-optimization labor.
 
+The garden also acts as a foil to [[wiki/concepts/the-stream]]: a timeline-first architecture that serializes thought into feeds. A garden resists that flattening by giving ideas paths, neighborhoods, backlinks, and revisable context.
+
 ## Related Concepts
 
 - [[wiki/synthesis/digital-garden-ethos]]
+- [[wiki/synthesis/technopastoral-synthesis]]
+- [[wiki/concepts/the-stream]]
 - [[wiki/synthesis/llm-wiki-pattern]]
 - [[docs/adr/0016-use-topographical-reading-with-append-only-process-history]]
 
@@ -33,4 +37,3 @@ For the learning pipeline, this matters because the system should preserve play,
 - [[learning/packets/digital-garden-ethos/packet]]
 - [[raw/sources/digital-garden-ethos]]
 - https://maggieappleton.com/garden-history
-

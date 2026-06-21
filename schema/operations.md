@@ -10,6 +10,9 @@ Create a new learning packet skeleton from a title or topic.
 **packet.draft**:
 Create suggested trusted wiki output from an imported learning packet.
 
+**packet.reconcile**:
+Compare an imported packet export with the current vault, resolving existing concepts, new candidates, suggested patches, provenance, and human-contact status before review.
+
 **packet.review**:
 Prepare or update the promotion review for a drafted learning packet.
 
@@ -31,6 +34,9 @@ Prepare a suggested patch for an existing trusted concept note.
 
 **bridge.google-doc.import**:
 Import a packet export from a Google Doc URL or file ID into the learning area.
+
+**bridge.notebooklm.manual-import**:
+Import a manually pasted NotebookLM packet export from `learning/inbox/notebooklm/<slug>/packet-export.md` into the learning area.
 
 ## Wiki
 

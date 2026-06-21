@@ -40,9 +40,29 @@ _Avoid_: NotebookLM output, pasted response
 The fixed-heading Markdown shape that packet exports must follow before a bridge can normalize them into learning packets.
 _Avoid_: Prompt output, import format
 
+**Prompt Template**:
+A reusable Markdown prompt that teaches an external LLM how to produce a packet export without hard-coding one packet's temporary context.
+_Avoid_: One-off prompt, chat text
+
+**Vault Context Injection**:
+The packet-specific act of adding relevant current vault notes, protocol principles, and human-contact material into a prompt template before sending it to an external LLM.
+_Avoid_: Static prompt, global context
+
+**Vault Context Slice**:
+The topic-specific subset of trusted notes, aliases, protocol principles, and suggested-patch targets injected into an external LLM prompt for one learning packet.
+_Avoid_: Whole-vault dump, global memory
+
+**Local Reconciliation**:
+The local protocol step that compares an external packet export with the current vault, resolves existing concepts versus new candidates, and turns advisory output into reviewable packet artifacts.
+_Avoid_: Blind import, external promotion
+
 **Bridge**:
 An adapter that brings packet exports from an external tool or storage location into the learning area without making that external tool part of the core model.
 _Avoid_: Integration, sync
+
+**Manual NotebookLM Import**:
+The first NotebookLM bridge mode, where the user manually pastes a NotebookLM packet export into the inbox and the local protocol normalizes it into a learning packet.
+_Avoid_: NotebookLM sync, direct NotebookLM integration
 
 **Google Docs Bridge**:
 The first bridge, which imports a packet export from a specific Google Doc URL or file ID and normalizes it into a learning packet.

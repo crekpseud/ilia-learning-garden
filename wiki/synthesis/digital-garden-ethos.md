@@ -32,6 +32,7 @@ For this project, the strongest alignment is with four existing protocol princip
 ## Key Ideas
 
 - Gardens are organized by topography: relationships, themes, and links matter more than timestamps.
+- The [[wiki/concepts/the-stream|Stream]] replaces topology with serialization; gardens preserve meaningful spatial and conceptual relationships.
 - Dense links let a reader or learner enter from many points and follow trails through related material.
 - A garden is never fully finished; it should support revision, expansion, clarification, and pruning.
 - Imperfect notes need visible status or epistemic metadata so readers know how mature the thinking is.
@@ -44,6 +45,7 @@ For this project, the strongest alignment is with four existing protocol princip
 
 - Extends [[wiki/synthesis/llm-wiki-pattern]] with a human-facing metaphor for maintained linked knowledge.
 - Introduces [[wiki/concepts/digital-garden]] as a reusable concept for the vault.
+- Links to [[wiki/synthesis/technopastoral-synthesis]], which sharpens the contrast between gardens and streams.
 - Supports [[docs/adr/0005-treat-markdown-as-the-codebase]] because portable Markdown is a durable ownership strategy.
 - Supports [[docs/adr/0007-use-protocol-first-top-level-structure]] because the vault itself should expose its knowledge topology.
 - Supports [[docs/adr/0008-allow-attachments-with-markdown-records]] because digital gardens can include diverse media while Markdown records remain canonical.
@@ -62,4 +64,3 @@ For this project, the strongest alignment is with four existing protocol princip
 
 - [[raw/sources/digital-garden-ethos]]
 - https://maggieappleton.com/garden-history
-
