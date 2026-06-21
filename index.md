@@ -33,3 +33,4 @@ Content-oriented index for the vault.
 - [[docs/planning/initial-milestones]] - Initial milestone sequence.
 - [[schema/README|Protocol Schema]] - Rules, templates, prompts, and validation conventions.
 - [[docs/adr/README|Decision Log]] - Architectural decisions that shape the garden protocol.
+- [[AGENTS]] - Portable instructions for AI agents operating on the garden.

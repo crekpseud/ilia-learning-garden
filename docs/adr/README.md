@@ -12,6 +12,7 @@ Architectural decisions that shape the Markdown-first learning protocol.
 - [[0007-use-protocol-first-top-level-structure]]
 - [[0008-allow-attachments-with-markdown-records]]
 - [[0009-keep-attachments-out-of-the-trusted-wiki]]
+- [[0020-use-portable-agent-instructions]]
 
 ## Bridges And Imports
 
