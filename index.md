@@ -31,3 +31,5 @@ Content-oriented index for the vault.
 - [[CONTEXT]] - Domain language for the learning pipeline.
 - [[docs/context/project-idea]] - Project vision, constraints, and open questions.
 - [[docs/planning/initial-milestones]] - Initial milestone sequence.
+- [[schema/README|Protocol Schema]] - Rules, templates, prompts, and validation conventions.
+- [[docs/adr/README|Decision Log]] - Architectural decisions that shape the garden protocol.

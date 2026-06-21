@@ -1,7 +1,7 @@
 ---
 type: suggested-patches
 packet: "[[learning/packets/knowledge-gardening/packet]]"
-status: pending-human-contact
+status: applied
 created: 2026-06-21
 ---
 

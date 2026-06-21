@@ -38,4 +38,4 @@ NotebookLM marked [[wiki/concepts/digital-garden|Digital Garden]] as a new candi
 
 Approved and promoted [[wiki/synthesis/technopastoral-synthesis]] and [[wiki/concepts/the-stream]]. Applied approved patches to [[wiki/concepts/digital-garden]] and [[wiki/synthesis/digital-garden-ethos]].
 
-Deferred [[wiki/concepts/evergreen-note|Evergreen Note]], [[wiki/concepts/bi-directional-linking|Bi-directional Linking]], and [[wiki/concepts/epistemic-status|Epistemic Status]] until more packets reinforce them.
+Deferred the candidate concepts `Evergreen Note`, `Bi-directional Linking`, and `Epistemic Status` until more packets reinforce them.

@@ -4,7 +4,7 @@ status: trusted
 created: YYYY-MM-DD
 aliases: []
 derived_from:
-  - "[[learning/packets/<slug>/packet]]"
+  - "<source-packet-wikilink>"
 ---
 
 # <Concept Title>
@@ -16,4 +16,3 @@ derived_from:
 ## Related Concepts
 
 ## Sources
-

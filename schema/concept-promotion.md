@@ -43,7 +43,7 @@ Example:
 ```markdown
 ## Approved Concept Promotions
 
-- [x] Persistent Wiki -> [[wiki/concepts/persistent-wiki]]
+- [x] Persistent Wiki -> `wiki/concepts/persistent-wiki.md`
 ```
 
 ## Existing Concept Rule

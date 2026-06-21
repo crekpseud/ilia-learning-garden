@@ -33,4 +33,5 @@ For this vault, the Stream acts as the negative foil for [[wiki/concepts/digital
 ## Sources
 
 - [[learning/packets/knowledge-gardening/packet]]
+- [[learning/packets/knowledge-gardening/sources]]
 - [[raw/sources/knowledge-gardening-notebook]]

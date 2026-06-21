@@ -1,7 +1,7 @@
 ---
 type: draft-synthesis
 packet: "[[learning/packets/knowledge-gardening/packet]]"
-status: pending-human-contact
+status: promoted
 created: 2026-06-21
 recognized_existing_notes:
   - "[[wiki/concepts/digital-garden]]"

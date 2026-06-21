@@ -11,15 +11,11 @@ created: 2026-06-21
 
 # Human Contact
 
-This packet was imported from a NotebookLM packet export, but it is not ready for promotion yet.
+This packet was imported from a NotebookLM packet export. At import time it was not ready for promotion; the reflection below later satisfied the human-contact gate.
 
 ## Packet Export Status
 
-The export contained:
-
-```text
-MISSING: human-contact artifact required before promotion.
-```
+The original export contained a missing-human-contact marker. That original marker is preserved in [[learning/inbox/notebooklm/knowledge-gardening/packet-export]]; this file records the later accepted contact artifact.
 
 ## Reflection Prompt
 

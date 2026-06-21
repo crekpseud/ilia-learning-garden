@@ -1,7 +1,7 @@
 ---
 type: draft-concepts
 packet: "[[learning/packets/knowledge-gardening/packet]]"
-status: pending-human-contact
+status: partially-promoted
 created: 2026-06-21
 ---
 

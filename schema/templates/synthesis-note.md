@@ -1,7 +1,7 @@
 ---
 type: synthesis
 status: trusted
-source_packet: "[[learning/packets/<slug>/packet]]"
+source_packet: "<source-packet-wikilink>"
 created: YYYY-MM-DD
 aliases: []
 ---
@@ -19,4 +19,3 @@ aliases: []
 ## Questions
 
 ## Sources
-

@@ -43,11 +43,12 @@ This also clarifies the role of AI. AI can help score, cluster, weed, and summar
 
 ## Questions
 
-- Is [[wiki/concepts/evergreen-note|Evergreen Note]] useful enough for this protocol, or is it too tied to adjacent PKM traditions?
+- Is the deferred candidate concept `Evergreen Note` useful enough for this protocol, or is it too tied to adjacent PKM traditions?
 - How can AI idea scoring help without making the garden feel optimized or generic?
 - How much structure prevents wilderness without turning the garden into a filing cabinet?
 
 ## Sources
 
 - [[learning/inbox/notebooklm/knowledge-gardening/packet-export]]
+- [[learning/packets/knowledge-gardening/sources]]
 - [[raw/sources/knowledge-gardening-notebook]]
