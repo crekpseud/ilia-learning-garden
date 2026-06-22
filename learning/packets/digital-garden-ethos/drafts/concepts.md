@@ -63,6 +63,8 @@ Suggested promotion: not yet. It is interesting for future schema design, but pr
 
 ## Knowledge Gardener
 
+- Status: promoted to [[wiki/concepts/knowledge-gardener]]
+
 An archetype for a person or agent who shapes conditions for knowledge growth through planting, pruning, linking, tending, and harvesting rather than imposing a rigid hierarchy.
 
 Suggested promotion: maybe. It captures the user's preferred relationship to knowledge engineering, but may need one more packet or reflection before becoming trusted.
@@ -72,6 +74,8 @@ Related:
 - [[wiki/synthesis/llm-wiki-pattern]]
 
 ## Playful Knowledge Practice
+
+- Status: promoted to [[wiki/concepts/playful-knowledge-practice]]
 
 The principle that a knowledge system should preserve play, curiosity, and lightness so that learning remains sustainable rather than collapsing into self-optimization ritual.
 

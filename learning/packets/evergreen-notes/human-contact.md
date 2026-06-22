@@ -1,14 +1,16 @@
 ---
 type: human-contact
 packet: "[[learning/packets/evergreen-notes/packet]]"
-status: missing
-contact_types: []
+status: complete
+contact_types:
+  - podcast-listening-notes
+  - reflection
 created: 2026-06-22
 ---
 
 # Human Contact
 
-This packet was imported from a NotebookLM direct copy-paste export. It is not ready for promotion yet.
+This packet was imported from a NotebookLM direct copy-paste export. The human-contact gate has passed.
 
 ## Packet Export Status
 
@@ -26,4 +28,22 @@ Should `Evergreen Note` become a trusted concept in this vault, or should it rem
 
 ## Reflection
 
-Pending.
+First of all the idea of evergreen naturally follows the metaphor of the garden. I don't believe that such things can be a coincidence. Here are some notes I made while listening to a podcast on the topic:
+
+Wikis should be evergreen - knowledge as a plant, software as a plant.
+
+Note titles as APIs. Declarative. Pulling thoughts by their title handles.
+
+Write notes for yourself, disregard the potential future audience. Lower the emotional stakes.
+
+Associative ontologies
+
+Generation effect
+
+Reading inbox and writing inbox
+
+Living interconnected ecosystems
+
+## Gate Result
+
+Accepted as human-contact artifact on 2026-06-22.

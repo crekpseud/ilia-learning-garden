@@ -2,7 +2,7 @@
 type: learning-packet
 slug: david-west-object-thinking
 title: Reflections on David West's Object Thinking
-status: pending-human-contact
+status: promoted
 created: 2026-06-22
 source_tools:
   - NotebookLM
@@ -58,4 +58,10 @@ Agent sense-making is recorded in [[learning/packets/david-west-object-thinking/
 
 ## Promotion Output
 
-Pending human contact and promotion review.
+- [[wiki/synthesis/object-thinking-and-the-digital-garden]]
+- [[wiki/concepts/object-thinking]]
+- [[wiki/concepts/software-as-theater-metaphor]]
+- [[wiki/concepts/self-evaluating-rule]]
+- [[wiki/concepts/option-maybe-pattern]]
+
+Applied approved patches to [[wiki/synthesis/digital-garden-ethos]] and [[wiki/concepts/digital-garden]].

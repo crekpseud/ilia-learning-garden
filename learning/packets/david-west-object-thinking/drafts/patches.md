@@ -1,7 +1,7 @@
 ---
 type: suggested-patches
 packet: "[[learning/packets/david-west-object-thinking/packet]]"
-status: pending-human-contact
+status: applied
 created: 2026-06-22
 ---
 

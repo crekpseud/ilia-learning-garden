@@ -1,8 +1,9 @@
 ---
 type: promotion-review
 packet: "[[learning/packets/evergreen-notes/packet]]"
-status: pending-human-contact
-reviewed:
+status: promoted
+reviewed: 2026-06-22
+promoted: 2026-06-22
 ---
 
 # Promotion Review
@@ -11,27 +12,36 @@ reviewed:
 
 - [x] Packet export exists.
 - [x] Source record exists.
-- [ ] Human-contact artifact exists.
+- [x] Human-contact artifact exists.
 - [x] Draft synthesis exists.
 - [x] Candidate concepts drafted.
 - [x] Suggested patches drafted.
 
 ## Proposed Promotion
 
-- [ ] Promote [[learning/packets/evergreen-notes/drafts/synthesis]] to `wiki/synthesis/evergreen-notes-as-evolving-insight.md`.
+- [x] Promote [[learning/packets/evergreen-notes/drafts/synthesis]] to `wiki/synthesis/evergreen-notes-as-evolving-insight.md`.
 
 ## Candidate Concept Promotions
 
-- [ ] Evergreen Note -> `wiki/concepts/evergreen-note.md`
+- [x] Evergreen Note -> `wiki/concepts/evergreen-note.md`
 - [ ] Bi-directional Linking -> `wiki/concepts/bi-directional-linking.md`
 - [ ] Epistemic Status -> `wiki/concepts/epistemic-status.md`
-- [ ] The Ritualization Trap -> `wiki/concepts/the-ritualization-trap.md`
+- [x] The Ritualization Trap -> `wiki/concepts/the-ritualization-trap.md`
+- [x] Note Titles as APIs -> `wiki/concepts/note-titles-as-apis.md`
 
 ## Existing Concept Patches
 
-- [ ] Apply patch to [[wiki/concepts/digital-garden]].
-- [ ] Apply patch to [[wiki/synthesis/digital-garden-ethos]].
+- [x] Apply patch to [[wiki/concepts/digital-garden]].
+- [x] Apply patch to [[wiki/synthesis/digital-garden-ethos]].
 
 ## Decision Notes
 
-This packet reinforces `Evergreen Note`, which was previously deferred in [[learning/packets/knowledge-gardening/review]]. Promotion is blocked until the user records a human-contact artifact after engaging with the NotebookLM podcast or equivalent material.
+Human-contact artifact recorded in [[learning/packets/evergreen-notes/human-contact]].
+
+The reflection reinforces `Evergreen Note` and adds a notable user-originated candidate: `Note Titles as APIs`. It also strengthens the garden/software-as-plant narrative while keeping the ritualization risk visible.
+
+Approved and promoted [[wiki/synthesis/evergreen-notes-as-evolving-insight]], [[wiki/concepts/evergreen-note]], [[wiki/concepts/the-ritualization-trap]], and [[wiki/concepts/note-titles-as-apis]].
+
+Applied approved patches to [[wiki/concepts/digital-garden]] and [[wiki/synthesis/digital-garden-ethos]].
+
+Deferred `Bi-directional Linking` and `Epistemic Status`.

@@ -1,8 +1,9 @@
 ---
 type: draft-synthesis
 packet: "[[learning/packets/evergreen-notes/packet]]"
-status: pending-human-contact
+status: promoted
 created: 2026-06-22
+promoted_to: "[[wiki/synthesis/evergreen-notes-as-evolving-insight]]"
 recognized_existing_notes:
   - "[[wiki/concepts/digital-garden]]"
   - "[[wiki/synthesis/digital-garden-ethos]]"
@@ -44,9 +45,22 @@ The same practice also carries risk. If every note must become polished, atomic,
 ## Questions
 
 - Should `Evergreen Note` become a trusted concept, or is it a property of this vault's existing `Concept Note` idea?
+- Should `Note Titles as APIs` become a trusted concept for the way note names act as handles for thought?
 - How much maintenance should the protocol encourage before tending turns into over-ritualized labor?
 - Should incorrect older ideas be edited in place, patched, or corrected by linked successor notes?
 - Is `Bi-directional Linking` conceptually important enough for a separate trusted concept note?
+
+## Human Reflection Signals
+
+The user's reflection emphasizes:
+
+- Wikis should be evergreen.
+- Knowledge and software both feel plant-like.
+- Note titles act like APIs: declarative handles that pull thoughts into reach.
+- Notes should be written for the self first, lowering emotional stakes around future audiences.
+- Associative ontologies and the generation effect are central.
+- Reading and writing inboxes may become important workflow structures.
+- The garden should remain a living interconnected ecosystem.
 
 ## Sources
 

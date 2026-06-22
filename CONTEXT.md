@@ -132,6 +132,14 @@ _Avoid_: Import validation, promotion checklist
 A non-binding suggestion from an agent after gardening review, such as a next learning topic, a protocol adjustment, a link to inspect, a warning about drift, or a maintenance task.
 _Avoid_: Automatic promotion, command
 
+**Knowledge Gardener**:
+A person or agent who shapes conditions for knowledge growth through planting, pruning, linking, tending, and harvesting rather than imposing a rigid hierarchy.
+_Avoid_: Taxonomist, curator, file clerk
+
+**Playful Knowledge Practice**:
+The principle that a knowledge system should preserve play, curiosity, and lightness so that learning remains sustainable rather than becoming self-optimization ritual.
+_Avoid_: Gamification for its own sake, productivity system, streak engine
+
 **Suggested Patch**:
 A proposed change to an existing trusted wiki note that must be reviewed before it is applied.
 _Avoid_: Auto-update, rewrite

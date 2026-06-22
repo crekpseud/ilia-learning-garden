@@ -129,3 +129,23 @@ Normalized the repaired NotebookLM export into [[learning/packets/david-west-obj
 ## [2026-06-22] protocol.decision | Active Gardening Review
 
 Recorded [[docs/adr/0025-require-active-gardening-review]] after deciding that agents should actively participate in the garden instead of only importing and promoting notes. Added [[schema/gardening-review]], `garden.review`, and the first packet-specific review at [[learning/packets/david-west-object-thinking/artifacts/gardening-review]].
+
+## [2026-06-22] packet.review | Evergreen Notes
+
+Recorded human-contact artifact for [[learning/packets/evergreen-notes/packet]] from the user's NotebookLM podcast listening notes. Updated the packet to ready-for-review, added `Note Titles as APIs` as a user-originated candidate concept, and created [[learning/packets/evergreen-notes/artifacts/gardening-review]].
+
+## [2026-06-22] packet.promote | Evergreen Notes
+
+Promoted [[wiki/synthesis/evergreen-notes-as-evolving-insight]], [[wiki/concepts/evergreen-note]], [[wiki/concepts/the-ritualization-trap]], and [[wiki/concepts/note-titles-as-apis]] from [[learning/packets/evergreen-notes/packet]]. Applied approved patches to [[wiki/concepts/digital-garden]] and [[wiki/synthesis/digital-garden-ethos]]. Deferred `Bi-directional Linking` and `Epistemic Status`.
+
+## [2026-06-22] packet.review | David West Object Thinking
+
+Recorded human-contact artifact for [[learning/packets/david-west-object-thinking/packet]] from the user's NotebookLM podcast listening notes and reflection. Updated the packet to ready-for-review, added `Option/Maybe Pattern` and `Actor Model` as user-originated candidates, and updated [[learning/packets/david-west-object-thinking/artifacts/gardening-review]] with post-contact promotion guidance.
+
+## [2026-06-22] packet.promote | David West Object Thinking
+
+Promoted [[wiki/synthesis/object-thinking-and-the-digital-garden]], [[wiki/concepts/object-thinking]], [[wiki/concepts/software-as-theater-metaphor]], [[wiki/concepts/self-evaluating-rule]], and [[wiki/concepts/option-maybe-pattern]] from [[learning/packets/david-west-object-thinking/packet]]. Applied approved patches to [[wiki/synthesis/digital-garden-ethos]] and [[wiki/concepts/digital-garden]]. Deferred `Null Object Pattern` and `Formalism vs Hermeneutics`.
+
+## [2026-06-22] concept.promote | Digital Garden Ethos
+
+Promoted [[wiki/concepts/knowledge-gardener]] and [[wiki/concepts/playful-knowledge-practice]] from [[learning/packets/digital-garden-ethos/packet]] after the user approved the previously deferred concepts. Recorded [[learning/packets/digital-garden-ethos/artifacts/gardening-review]] with the recommendation to explore emojis as a separate learning packet before adding emoji conventions to the protocol.

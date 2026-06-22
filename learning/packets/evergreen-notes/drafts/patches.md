@@ -1,7 +1,7 @@
 ---
 type: suggested-patches
 packet: "[[learning/packets/evergreen-notes/packet]]"
-status: pending-human-contact
+status: applied
 created: 2026-06-22
 ---
 
@@ -38,4 +38,15 @@ Suggested focus:
 
 ```markdown
 Define Evergreen Note as a reusable, revisable note that accumulates insight over time. Emphasize its relationship to concept notes, digital gardens, bottom-up composition, and the risk of over-ritualized maintenance.
+```
+
+## Patch: Future Concept Note `Note Titles as APIs`
+
+Rationale:
+The user's reflection introduced a strong local concept: note titles as declarative handles for thoughts.
+
+Suggested focus:
+
+```markdown
+Define Note Titles as APIs as the practice of naming notes so they can be invoked by humans, links, and agents as stable handles for thought. Emphasize title clarity, retrieval, linkability, and the risk of over-engineering names.
 ```

@@ -64,3 +64,36 @@ Potential next packets:
 - Ask the user specifically whether Object Thinking changes how they think about C#/.NET code.
 - Do not promote all software candidates at once. Pick only concepts that feel reusable beyond this packet.
 - Consider creating a future software-design map only after one or two more software packets arrive.
+
+## Human-Contact Update
+
+The reflection confirms that Object Thinking changed something important, but not in a simplistic "objects win" way. The user is now holding several metaphors in tension:
+
+- everything is an object
+- everything is a function
+- everything is text
+- systems as communities
+- objects as autonomous agents
+
+This is healthy. It suggests the garden should treat software metaphors as lenses, not dogmas.
+
+## Updated Promotion Guidance
+
+- Promote the synthesis note if the user wants this packet to become the first trusted software-design synthesis.
+- `Object Thinking` is the strongest concept candidate, but it should be caveated as a mindset and modeling lens rather than doctrine.
+- `Null Object Pattern` should probably wait until it is compared with Option/Maybe, nullable reference types, and fail-fast exception strategies in the user's C#/.NET context.
+- `Option/Maybe Pattern` has become a new user-originated candidate, but it needs a dedicated packet before promotion.
+- `Actor Model` is a promising next learning path rather than an immediate concept promotion.
+- Christopher Alexander's influence on software should likely become a future packet, especially because it links Object Thinking back to pattern languages and the garden metaphor.
+
+## Directional Warning
+
+The garden is now accumulating strong living-system and community metaphors. They are productive, but the promoted [[wiki/concepts/the-ritualization-trap]] should stay active as a counterweight: metaphor must improve design judgment, not merely make software feel organic or profound.
+
+## Promotion Outcome
+
+The user approved promotion of [[wiki/synthesis/object-thinking-and-the-digital-garden]], [[wiki/concepts/object-thinking]], [[wiki/concepts/software-as-theater-metaphor]], [[wiki/concepts/self-evaluating-rule]], and [[wiki/concepts/option-maybe-pattern]].
+
+This establishes the first trusted software-design cluster in the garden. The important shape is not "object thinking wins"; it is that software metaphors now have a trusted home and can be compared as design lenses.
+
+`Null Object Pattern` and `Formalism vs Hermeneutics` remain deferred. Null Object should probably be revisited in a future C#/.NET absence-handling packet alongside [[wiki/concepts/option-maybe-pattern]], nullable reference types, Result types, and fail-fast exceptions.

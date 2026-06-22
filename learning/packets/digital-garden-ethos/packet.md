@@ -44,3 +44,5 @@ Capture how digital gardens frame linked knowledge as a personal, evolving, topo
 
 - [[wiki/synthesis/digital-garden-ethos]]
 - [[wiki/concepts/digital-garden]]
+- [[wiki/concepts/knowledge-gardener]]
+- [[wiki/concepts/playful-knowledge-practice]]

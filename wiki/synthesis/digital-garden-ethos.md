@@ -22,6 +22,10 @@ This article gives our vault a stronger human-facing design language. The learni
 
 The user's reflection adds an important constraint: gardening metaphors should make the system quieter, more playful, and more livable, not more ritualistic. Seedlings, budding notes, pruning, evergreen notes, mycelium, rhizomes, and emojis may become useful expressive tools, but only if they reduce friction and preserve curiosity.
 
+The garden metaphor becomes more concrete through [[wiki/concepts/evergreen-note|Evergreen Note]] practice. Writing notes in one's own words is not merely capture; it is a form of tending that strengthens memory and understanding through the generation effect.
+
+David West's [[wiki/concepts/object-thinking|Object Thinking]] offers a software-design parallel to the digital garden metaphor. It treats software less as a machine assembled from passive parts and more as a community of collaborating objects with responsibilities, behaviors, and contextual roles. The metaphor is useful when it improves domain understanding, but it must still survive contact with implementation practice.
+
 For this project, the strongest alignment is with four existing protocol principles:
 
 - Markdown is the durable surface of the system.
@@ -46,6 +50,9 @@ For this project, the strongest alignment is with four existing protocol princip
 - Extends [[wiki/synthesis/llm-wiki-pattern]] with a human-facing metaphor for maintained linked knowledge.
 - Introduces [[wiki/concepts/digital-garden]] as a reusable concept for the vault.
 - Links to [[wiki/synthesis/technopastoral-synthesis]], which sharpens the contrast between gardens and streams.
+- Links to [[wiki/synthesis/evergreen-notes-as-evolving-insight]], which names the note-level practice behind living garden knowledge.
+- Links to [[wiki/synthesis/object-thinking-and-the-digital-garden]], which extends living-system metaphors into software design while keeping pragmatism visible.
+- Links to [[wiki/concepts/the-ritualization-trap]], which keeps the garden metaphor from becoming maintenance for its own sake.
 - Supports [[docs/adr/0005-treat-markdown-as-the-codebase]] because portable Markdown is a durable ownership strategy.
 - Supports [[docs/adr/0007-use-protocol-first-top-level-structure]] because the vault itself should expose its knowledge topology.
 - Supports [[docs/adr/0008-allow-attachments-with-markdown-records]] because digital gardens can include diverse media while Markdown records remain canonical.
@@ -63,4 +70,8 @@ For this project, the strongest alignment is with four existing protocol princip
 ## Sources
 
 - [[raw/sources/digital-garden-ethos]]
+- [[learning/packets/evergreen-notes/packet]]
+- [[learning/packets/david-west-object-thinking/packet]]
+- [[raw/sources/evergreen-notes-notebook]]
+- [[raw/sources/david-west-object-thinking-notebook]]
 - https://maggieappleton.com/garden-history

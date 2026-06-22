@@ -2,7 +2,7 @@
 type: learning-packet
 slug: evergreen-notes
 title: Evergreen Notes: A System for Evolving Insight
-status: pending-human-contact
+status: promoted
 created: 2026-06-22
 source_tools:
   - NotebookLM
@@ -30,6 +30,7 @@ Use this packet to explore whether `Evergreen Note` should become a trusted conc
 - [[learning/packets/evergreen-notes/drafts/concepts|Candidate Concepts]]
 - [[learning/packets/evergreen-notes/drafts/patches|Suggested Patches]]
 - [[learning/packets/evergreen-notes/artifacts/import-repair|Import Repair]]
+- [[learning/packets/evergreen-notes/artifacts/gardening-review|Gardening Review]]
 
 ## Recognized Existing Concepts And Notes
 
@@ -47,4 +48,9 @@ Use this packet to explore whether `Evergreen Note` should become a trusted conc
 
 ## Promotion Output
 
-Pending human contact and promotion review.
+- [[wiki/synthesis/evergreen-notes-as-evolving-insight]]
+- [[wiki/concepts/evergreen-note]]
+- [[wiki/concepts/the-ritualization-trap]]
+- [[wiki/concepts/note-titles-as-apis]]
+
+Applied approved patches to [[wiki/concepts/digital-garden]] and [[wiki/synthesis/digital-garden-ethos]].
