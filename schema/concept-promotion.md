@@ -12,6 +12,7 @@ Agents and future tools may automatically:
 - link to existing trusted concepts in draft material
 - check `wiki/concepts/` for likely duplicates
 - prepare suggested patches for existing concept notes
+- run a gardening review before or after approved promotion
 - update `index.md` and `log.md` after approved promotion
 
 Agents and future tools must not automatically:
@@ -29,6 +30,7 @@ learning packet
 -> concept recognition
 -> promotion review
 -> duplicate and alias check
+-> gardening review
 -> create concept note or suggested patch
 -> update index and log
 -> ask before commit

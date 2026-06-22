@@ -48,6 +48,14 @@ _Avoid_: One-off prompt, chat text
 A Markdown or Google Docs source added to NotebookLM or another external LLM workspace so large, stable instructions can be grounded as source material instead of pasted into the chat prompt.
 _Avoid_: Giant chat prompt, hidden context
 
+**Garden Meta-Source ID**:
+An internal marker line placed at the top of a copied-text NotebookLM source so prompts can identify the source by content instead of NotebookLM's generated filename.
+_Avoid_: NotebookLM filename, source title
+
+**NotebookLM Copy-Text Setup**:
+The three-text setup for a NotebookLM packet export: copy in the packet export contract, copy in the topic-specific vault context slice, then paste a run prompt that refers to both by Garden Meta-Source ID.
+_Avoid_: File upload requirement, filename-dependent setup
+
 **Run Prompt**:
 A short chat prompt that tells an external LLM which prompt source artifacts and notebook sources to use for the current export.
 _Avoid_: Full protocol prompt, source dump
@@ -96,6 +104,14 @@ _Avoid_: Drive sync, NotebookLM integration
 An explicit LLM-assisted step that reshapes a malformed packet export into the packet export contract after validation fails.
 _Avoid_: Best-effort import, silent cleanup
 
+**Import Quality Tier**:
+The local classification assigned to an external packet export after validation: `strict-valid`, `repairable`, or `rejected`.
+_Avoid_: Prompt success, model quality
+
+**Repairable Packet Export**:
+A malformed packet export that fails the strict contract but contains enough topic, source, synthesis, concept, and human-contact information for explicit local repair without inventing the learning material.
+_Avoid_: Valid packet, good-enough output
+
 **Learning Area**:
 The untrusted part of the Obsidian vault where learning packets, draft notes, reflections, quiz results, and review state live before promotion.
 _Avoid_: Inbox, staging database, temp folder
@@ -107,6 +123,14 @@ _Avoid_: Import, sync, publish
 **Promotion Review**:
 A Markdown review record for a learning packet that captures whether the synthesis note, concept notes, and suggested patches are approved for promotion.
 _Avoid_: Chat approval, final check
+
+**Gardening Review**:
+An agent-authored sense-making review that asks what a packet or promotion means for the whole garden: unexpected links, emerging narratives, protocol pressure, next learning paths, and possible drift or over-optimization.
+_Avoid_: Import validation, promotion checklist
+
+**Gardening Proposal**:
+A non-binding suggestion from an agent after gardening review, such as a next learning topic, a protocol adjustment, a link to inspect, a warning about drift, or a maintenance task.
+_Avoid_: Automatic promotion, command
 
 **Suggested Patch**:
 A proposed change to an existing trusted wiki note that must be reviewed before it is applied.

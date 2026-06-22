@@ -19,6 +19,14 @@ Prepare or update the promotion review for a drafted learning packet.
 **packet.promote**:
 Promote approved learning packet output into the trusted wiki.
 
+## Garden
+
+**garden.review**:
+Actively interpret a packet, promotion, or trusted-wiki change in the context of the whole garden, looking for unexpected links, emerging narratives, protocol pressure, drift, next learning paths, and useful proposals.
+
+**garden.propose**:
+Record non-binding proposals that arise from gardening review, such as next packets, suggested patches, maintenance tasks, or warnings about over-optimization.
+
 ## Concepts
 
 **concept.recognize**:

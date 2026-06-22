@@ -1,3 +1,7 @@
+GARDEN_META_SOURCE_ID: vault-context-slice:evergreen-notes
+GARDEN_META_SOURCE_KIND: vault-context-slice
+GARDEN_META_SOURCE_TITLE: Vault Context Slice - Evergreen Notes
+
 # Vault Context Slice - Evergreen Notes
 
 ## Protocol Summary

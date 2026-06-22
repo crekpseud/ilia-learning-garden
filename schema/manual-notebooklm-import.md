@@ -20,11 +20,28 @@ The inbox file is preserved as the source export. It is not edited during normal
 
 1. Copy the NotebookLM answer directly and paste it into the inbox path.
 2. Validate the export against [[packet-export-contract]].
-3. Preserve a source record in `raw/sources/`.
-4. Normalize the export into `learning/packets/<slug>/`.
-5. Run local reconciliation against the current vault.
-6. Mark the packet pending human contact if the export lacks a valid human-contact artifact.
-7. Promote only after explicit review and approval.
+3. Assign an import quality tier.
+4. Preserve a source record in `raw/sources/`.
+5. Normalize the export into `learning/packets/<slug>/` only if the tier is `strict-valid` or `repairable`.
+6. Run local reconciliation against the current vault.
+7. Run a gardening review using [[schema/gardening-review]].
+8. Mark the packet pending human contact if the export lacks a valid human-contact artifact.
+9. Promote only after explicit review and approval.
+
+## Import Quality Tiers
+
+NotebookLM can understand the contract and still produce output that fails strict structural compliance. Treat the output as advisory synthesis, not authoritative schema.
+
+Assign one of these tiers after validation:
+
+**strict-valid**:
+The export satisfies [[packet-export-contract]] exactly enough to normalize directly. Preserve the raw inbox export and proceed with local reconciliation.
+
+**repairable**:
+The export fails strict validation, but satisfies the minimum repairability contract in [[packet-export-contract]]. Preserve the raw inbox export, create `artifacts/import-repair.md`, document the contract failures, then normalize locally.
+
+**rejected**:
+The export lacks enough structure or substance for safe repair. Preserve the raw export if useful for diagnosis, but do not normalize it into packet drafts. Ask NotebookLM for explicit repair or rerun the packet export prompt.
 
 ## Local Reconciliation
 
@@ -37,6 +54,8 @@ During reconciliation, the local agent should:
 - keep new concepts as candidates until approved
 - de-duplicate sources and flag placeholder or unknown URLs
 - preserve the original export separately from normalized artifacts
+- document any contract failures and repairs in `artifacts/import-repair.md`
+- create or update `artifacts/gardening-review.md`
 - record missing human contact as a promotion blocker
 
 ## Why This Exists

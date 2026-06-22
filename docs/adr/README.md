@@ -24,6 +24,9 @@ Architectural decisions that shape the Markdown-first learning protocol.
 - [[0019-reconcile-external-packet-exports-locally]]
 - [[0021-use-notebooklm-source-artifacts-with-short-run-prompts]]
 - [[0022-separate-bridge-inputs-from-inbox-outputs]]
+- [[0023-classify-external-packet-exports-by-import-quality]]
+- [[0024-use-embedded-meta-source-ids-for-notebooklm-copy-text]]
+- [[0025-require-active-gardening-review]]
 
 ## Review And Promotion
 

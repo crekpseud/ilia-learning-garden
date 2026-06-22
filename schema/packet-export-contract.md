@@ -49,6 +49,36 @@ A packet export is a portable Markdown artifact produced by an external learning
 - Sources should be de-duplicated.
 - Unknown URLs should be written as `URL: unknown`; placeholder URLs are invalid.
 
+## Import Quality Tiers
+
+Bridge validation assigns one of these tiers:
+
+- `strict-valid`: the export satisfies the required headings, candidate concept format, wikilink rules, source rules, and human-contact marker rule.
+- `repairable`: the export fails strict validation but satisfies the minimum repairability contract below.
+- `rejected`: the export is too incomplete, too ambiguous, or too detached from source material to repair safely.
+
+Only `strict-valid` exports normalize directly. `repairable` exports require an explicit `artifacts/import-repair.md` record before local normalization. `rejected` exports should not become packet drafts.
+
+## Minimum Repairability Contract
+
+A malformed packet export is repairable only when it contains enough material for local repair without inventing the learning substance.
+
+It must contain:
+
+- a visible topic title or otherwise unambiguous topic
+- a substantive synthesis, summary, or set of key ideas
+- a source list, source URLs, or enough source clues to preserve provenance honestly
+- candidate concepts, important claims, or enough concept-level material to draft candidates locally
+- either the exact missing-human-contact marker or an absence of human contact that is clearly detectable
+
+It is not repairable when:
+
+- the topic cannot be identified
+- the answer is mostly meta-commentary about the task rather than learning material
+- source provenance is absent and cannot be represented honestly
+- local repair would require inventing concepts, claims, or sources not present in the export
+- the answer contains conflicting instructions that make the packet state unclear
+
 ## Candidate Concept Format
 
 Each candidate concept should use this structure:

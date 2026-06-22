@@ -50,6 +50,38 @@ Use the chat prompt for:
 
 This keeps NotebookLM grounded in the same protocol while avoiding oversized chat prompts.
 
+## NotebookLM Copy-Text Source Identity Rule
+
+When adding prompt source artifacts to NotebookLM as copied text, include stable identity markers at the top of the copied text. Do not rely on NotebookLM's generated filenames.
+
+The packet export contract must start with:
+
+```markdown
+GARDEN_META_SOURCE_ID: learning-packet-export-contract
+GARDEN_META_SOURCE_KIND: packet-export-contract
+GARDEN_META_SOURCE_TITLE: Learning Packet Export Contract
+```
+
+A vault context slice must start with:
+
+```markdown
+GARDEN_META_SOURCE_ID: vault-context-slice:<topic-slug>
+GARDEN_META_SOURCE_KIND: vault-context-slice
+GARDEN_META_SOURCE_TITLE: Vault Context Slice - <Topic Title>
+```
+
+Run prompts should refer to these marker lines, not to source filenames or UI titles.
+
+## NotebookLM Three-Text Setup Rule
+
+When preparing a new NotebookLM-to-garden packet from a screenshot or notebook text, provide the user with three copyable texts:
+
+- `learning-packet-export-contract`
+- `vault-context-slice`
+- `prompt`
+
+The prompt should first check for the two required Garden Meta-Source IDs. If either is missing, it should return a `NOT READY` preflight response instead of generating a packet. If both are present, it should generate only the packet export.
+
 ## Literal Markdown Rule
 
 Packet exports must preserve literal Markdown syntax, especially heading markers.

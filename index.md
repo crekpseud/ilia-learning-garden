@@ -20,11 +20,17 @@ Content-oriented index for the vault.
 - [[learning/packets/llm-wiki-pattern/packet|LLM Wiki Pattern]] - Protocol-only proof packet based on Karpathy's LLM Wiki article.
 - [[learning/packets/digital-garden-ethos/packet|Digital Garden Ethos]] - Promoted packet based on Maggie Appleton's article about digital gardens, used to test concept recognition and linking to the LLM Wiki Pattern.
 - [[learning/packets/knowledge-gardening/packet|Cultivating Knowledge: The Digital Garden and the Stream]] - Promoted packet imported from a manual NotebookLM export about knowledge gardening.
+- [[learning/packets/evergreen-notes/packet|Evergreen Notes: A System for Evolving Insight]] - Pending-human-contact packet imported from a direct NotebookLM copy-paste about evergreen notes.
+- [[learning/packets/architecture-of-original-thought/packet|Mastering the Architecture of Original Thought]] - Pending-human-contact packet imported from a NotebookLM notebook about effective learning, independent thought, and active reconstruction.
+- [[learning/packets/david-west-object-thinking/packet|Reflections on David West's Object Thinking]] - Pending-human-contact packet imported from a NotebookLM notebook about Object Thinking, metaphor, procedural habits, and software pragmatism.
 
 ## Raw Sources
 
 - [[raw/sources/digital-garden-ethos|A Brief History & Ethos of the Digital Garden]] - Source record for Maggie Appleton's digital garden article.
 - [[raw/sources/knowledge-gardening-notebook|Knowledge Gardening NotebookLM Export]] - Source record for the manual NotebookLM packet export.
+- [[raw/sources/evergreen-notes-notebook|Evergreen Notes NotebookLM Export]] - Source record for the direct NotebookLM packet export.
+- [[raw/sources/original-thought-notebook|Mastering the Architecture of Original Thought Notebook]] - Source record for a captured NotebookLM notebook about active learning and independent thought.
+- [[raw/sources/david-west-object-thinking-notebook|Reflections on David West's Object Thinking Notebook]] - Source record for a NotebookLM packet export about David West's Object Thinking.
 
 ## Project Context
 

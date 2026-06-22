@@ -9,6 +9,12 @@ Prompts should separate:
 - topic-specific instructions
 - user reflection or human-contact material
 
+For NotebookLM copy-text setup, prepare exactly three texts for the user:
+
+- the packet export contract, with `GARDEN_META_SOURCE_ID: learning-packet-export-contract`
+- the topic-specific vault context slice, with `GARDEN_META_SOURCE_ID: vault-context-slice:<topic-slug>`
+- the run prompt, which refers to both sources by `GARDEN_META_SOURCE_ID` marker rather than NotebookLM filename
+
 ## Available Prompts
 
 - [[notebooklm-contract-source]] - Add this as a NotebookLM source containing the stable packet export contract.

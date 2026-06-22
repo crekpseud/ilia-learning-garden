@@ -13,6 +13,7 @@ learning/packets/<slug>/
     concepts.md
     patches.md
   artifacts/
+    gardening-review.md
 ```
 
 ## Files
@@ -42,3 +43,6 @@ Suggested patches to existing trusted wiki notes.
 Packet-specific attachments and bridge artifacts.
 
 Packet-specific artifacts are materials attached to an already-normalized packet. Cross-packet or pre-packet bridge inputs belong in `learning/bridge/`.
+
+**artifacts/gardening-review.md**:
+Optional but recommended agent-authored sense-making review. It records what this packet means in the context of the whole garden, including unexpected links, emerging narratives, next learning paths, protocol pressure, and possible drift.

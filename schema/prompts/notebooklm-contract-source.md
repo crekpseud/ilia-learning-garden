@@ -1,8 +1,12 @@
+GARDEN_META_SOURCE_ID: learning-packet-export-contract
+GARDEN_META_SOURCE_KIND: packet-export-contract
+GARDEN_META_SOURCE_TITLE: Learning Packet Export Contract
+
 # Learning Packet Export Contract
 
-Add this file to NotebookLM as a source named `Learning Packet Export Contract`.
+Add this text to NotebookLM as a copied-text source.
 
-NotebookLM should use this source as the stable output contract for packet exports.
+NotebookLM should use this source as the stable output contract for packet exports. Prompts should identify this source by the `GARDEN_META_SOURCE_ID` marker, not by NotebookLM's generated filename.
 
 ## Purpose
 

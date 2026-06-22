@@ -1,6 +1,12 @@
+GARDEN_META_SOURCE_ID: vault-context-slice:{{TOPIC_SLUG}}
+GARDEN_META_SOURCE_KIND: vault-context-slice
+GARDEN_META_SOURCE_TITLE: Vault Context Slice - {{TOPIC_TITLE}}
+
 # Vault Context Slice Template
 
-Create one copy of this file per NotebookLM packet topic and add it to NotebookLM as a source named `Vault Context Slice - <Topic>`.
+Create one copy of this text per NotebookLM packet topic and add it to NotebookLM as a copied-text source.
+
+Replace `{{TOPIC_SLUG}}` and `{{TOPIC_TITLE}}` before using it. Prompts should identify this source by the `GARDEN_META_SOURCE_ID` marker, not by NotebookLM's generated filename.
 
 The slice should be small. Include only context that helps NotebookLM avoid duplicate concepts, target suggested patches, and relate the notebook to the current garden.
 
