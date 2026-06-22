@@ -22,6 +22,8 @@ Architectural decisions that shape the Markdown-first learning protocol.
 - [[0017-treat-prompt-templates-as-bridge-artifacts]]
 - [[0018-use-topic-specific-vault-context-slices]]
 - [[0019-reconcile-external-packet-exports-locally]]
+- [[0021-use-notebooklm-source-artifacts-with-short-run-prompts]]
+- [[0022-separate-bridge-inputs-from-inbox-outputs]]
 
 ## Review And Promotion
 

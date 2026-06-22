@@ -44,6 +44,14 @@ _Avoid_: Prompt output, import format
 A reusable Markdown prompt that teaches an external LLM how to produce a packet export without hard-coding one packet's temporary context.
 _Avoid_: One-off prompt, chat text
 
+**Prompt Source Artifact**:
+A Markdown or Google Docs source added to NotebookLM or another external LLM workspace so large, stable instructions can be grounded as source material instead of pasted into the chat prompt.
+_Avoid_: Giant chat prompt, hidden context
+
+**Run Prompt**:
+A short chat prompt that tells an external LLM which prompt source artifacts and notebook sources to use for the current export.
+_Avoid_: Full protocol prompt, source dump
+
 **Agent Compatibility Layer**:
 Small repository instruction files that teach non-Codex agents how to navigate and operate the Markdown garden without making any one agent the protocol authority.
 _Avoid_: Tool lock-in, hidden agent memory
@@ -67,6 +75,14 @@ _Avoid_: Integration, sync
 **Manual NotebookLM Import**:
 The first NotebookLM bridge mode, where the user manually pastes a NotebookLM packet export into the inbox and the local protocol normalizes it into a learning packet.
 _Avoid_: NotebookLM sync, direct NotebookLM integration
+
+**Bridge Preparation Area**:
+The `learning/bridge/` area where locally prepared artifacts for external tools live before they are sent out, such as NotebookLM context slices and run materials.
+_Avoid_: Inbox, trusted wiki, schema template
+
+**Inbox**:
+The `learning/inbox/` area where external tool outputs land before local normalization.
+_Avoid_: Bridge preparation, generated source material
 
 **Downstream Work Garden**:
 A restricted fork of the garden that may receive personal-garden protocol and public knowledge updates, but must never export work knowledge back to the personal garden.

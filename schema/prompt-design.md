@@ -30,6 +30,62 @@ Examples:
 - `{{VAULT_CONTEXT}}`
 - `{{HUMAN_CONTACT}}`
 
+## Prompt Source Artifact Rule
+
+For source-grounded tools like NotebookLM, prefer adding stable instructions as notebook sources and using a short run prompt in chat.
+
+Use source artifacts for:
+
+- the packet export contract
+- the vault context slice
+- long topic guidance
+- reusable rules that may exceed chat prompt limits
+
+Use the chat prompt for:
+
+- naming the current task
+- pointing to the relevant source artifacts
+- adding brief emphasis for the current run
+- asking for Markdown-only output
+
+This keeps NotebookLM grounded in the same protocol while avoiding oversized chat prompts.
+
+## Literal Markdown Rule
+
+Packet exports must preserve literal Markdown syntax, especially heading markers.
+
+External tools or Google Docs may render headings visually and lose the leading `#` characters when exported as text. For packet exports, the visible characters matter:
+
+- the topic title line starts with `# `
+- required sections start with `## `
+- candidate concept titles start with `### `
+
+If a bridge output loses these markers, use explicit import repair before normalization.
+
+## Wikilink Code Rule
+
+Wikilinks are part of the graph. External LLMs should not wrap wikilinks in backticks.
+
+Good:
+
+```markdown
+[[wiki/concepts/digital-garden|Digital Garden]]
+```
+
+Bad:
+
+```markdown
+`[[wiki/concepts/digital-garden|Digital Garden]]`
+```
+
+If an output backticks wikilinks, repair them before import so Obsidian and local validation can treat them as links.
+
+## NotebookLM Transport Rule
+
+Direct copy-paste from NotebookLM currently preserves literal Markdown better than exporting through Google Docs.
+
+Use direct copy-paste as the default manual NotebookLM bridge. Treat Google Docs export as a rich-text transport that may require fenced-code output or local repair before strict import.
+
 ## Vault Context Injection Rule
 
 Before using a prompt template with an external LLM, inject only the relevant current vault context. Prefer a topic-specific context slice over a whole-vault dump.

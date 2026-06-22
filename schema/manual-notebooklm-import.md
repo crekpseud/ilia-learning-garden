@@ -2,6 +2,10 @@
 
 Manual NotebookLM import is a first-class experimental bridge. It lets the user copy a NotebookLM packet export into the vault before any Google Docs or Drive automation exists.
 
+Prepared context slices and other NotebookLM inputs belong in `learning/bridge/notebooklm/`. Imported NotebookLM outputs belong in `learning/inbox/notebooklm/`.
+
+Direct copy-paste from NotebookLM is currently the preferred manual import mode because it preserves literal Markdown heading markers better than Google Docs export.
+
 ## Inbox Location
 
 Paste the external export into:
@@ -14,7 +18,7 @@ The inbox file is preserved as the source export. It is not edited during normal
 
 ## Flow
 
-1. Paste the NotebookLM export into the inbox path.
+1. Copy the NotebookLM answer directly and paste it into the inbox path.
 2. Validate the export against [[packet-export-contract]].
 3. Preserve a source record in `raw/sources/`.
 4. Normalize the export into `learning/packets/<slug>/`.

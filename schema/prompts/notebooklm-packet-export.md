@@ -2,6 +2,12 @@
 
 Use this prompt inside a NotebookLM notebook to produce a packet export that can later be normalized into this vault's learning packet structure.
 
+Prefer the split NotebookLM flow when the chat prompt is too large:
+
+- [[notebooklm-contract-source]]
+- [[vault-context-slice-template]]
+- [[notebooklm-run-prompt]]
+
 ## Design
 
 NotebookLM knows the notebook sources, but it does not know this vault or protocol unless we tell it. The local vault knows the protocol and current trusted notes, but it does not know how the NotebookLM sources are organized unless NotebookLM reports them.

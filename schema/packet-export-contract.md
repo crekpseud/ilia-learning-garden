@@ -36,11 +36,16 @@ A packet export is a portable Markdown artifact produced by an external learning
 ## Notes
 
 - Optional YAML frontmatter is allowed.
+- Required headings must use literal Markdown heading markers.
+- The topic title must be a visible Markdown H1 that starts with `# `.
+- Required section headings must be visible Markdown H2 lines that start with `## `.
 - Required headings must appear exactly once.
 - Bridges should preserve the original packet export in the inbox before normalization.
 - Missing required headings cause strict import failure unless explicit import repair is requested.
 - Wikilinks should refer only to notes supplied in the prompt's vault context.
+- Wikilinks should appear as plain wikilinks, not inline code.
 - Nonexistent notes should be marked as `NEW CANDIDATE: <title>`.
+- Suggested new synthesis notes and future notes should not be invented wikilinks.
 - Sources should be de-duplicated.
 - Unknown URLs should be written as `URL: unknown`; placeholder URLs are invalid.
 
@@ -59,6 +64,8 @@ Each candidate concept should use this structure:
 - Promotion recommendation: yes / maybe / not yet
 - If existing, suggested patch:
 ```
+
+The `### <Concept Title>` heading is required for each concept. A candidate concept entry without a title heading is invalid.
 
 ## Human-Contact Missing Value
 

@@ -53,3 +53,19 @@ Promoted [[wiki/synthesis/technopastoral-synthesis]] and [[wiki/concepts/the-str
 ## [2026-06-21] protocol.decision | Knowledge Gardening Import
 
 Recorded the protocol lessons from the manual NotebookLM experiment: use topic-specific vault context slices, reconcile external packet exports locally, and keep manual NotebookLM import as a first-class bridge while sync automation is deferred.
+
+## [2026-06-22] protocol.decision | NotebookLM Prompt Split
+
+Recorded the decision to feed NotebookLM stable packet-export instructions and vault context as sources, then use a short run prompt in chat when the monolithic prompt is too large.
+
+## [2026-06-22] protocol.decision | Bridge Input Area
+
+Recorded the decision to store locally prepared bridge inputs in `learning/bridge/` and keep `learning/inbox/` for external tool outputs.
+
+## [2026-06-22] protocol.maintenance | NotebookLM Contract Hardening
+
+Tightened NotebookLM prompt sources after an Evergreen Notes export lost Markdown heading markers and invented a synthesis wikilink. Added literal Markdown requirements, candidate concept heading requirements, and a repair prompt.
+
+## [2026-06-22] protocol.maintenance | NotebookLM Copy-Paste Findings
+
+Recorded that direct NotebookLM copy-paste preserves Markdown structure better than Google Docs export, and added prompt rules requiring plain wikilinks instead of backticked wikilinks.
