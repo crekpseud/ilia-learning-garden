@@ -1,8 +1,8 @@
 ---
 type: promotion-review
 packet: "[[learning/packets/architecture-of-original-thought/packet]]"
-status: pending-human-contact
-reviewed:
+status: ready-for-review
+reviewed: 2026-06-23
 ---
 
 # Promotion Review
@@ -11,7 +11,7 @@ reviewed:
 
 - [x] Packet export exists.
 - [x] Source record exists.
-- [ ] Human-contact artifact exists.
+- [x] Human-contact artifact exists.
 - [x] Draft synthesis exists.
 - [x] Candidate concepts drafted.
 - [x] Suggested patches drafted.
@@ -39,3 +39,5 @@ reviewed:
 This packet may be especially important for the protocol because it tests whether AI-assisted learning should explicitly preserve desirable difficulty, active recall, and first-principles reconstruction instead of optimizing only for fast synthesis.
 
 The raw export did not satisfy the strict packet export contract. Local repair is recorded in [[learning/packets/architecture-of-original-thought/artifacts/import-repair]].
+
+Human contact was provided on 2026-06-23 through listening and reflection. The reflection emphasizes spaced repetition anxiety, the problem of deciding what is worth remembering, learning as retrieval rather than input, the illusion of competence, and the risk of delegated understanding.

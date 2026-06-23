@@ -1,12 +1,16 @@
 # Prompt Design
 
-Prompts are bridge artifacts. They teach external LLMs how to produce packet exports that fit this vault's protocol.
+Prompts are bridge artifacts. They teach external LLMs how to produce source manifests or packet exports that fit this vault's protocol.
 
 ## Principle
 
 Keep prompt templates stable and inject current context at use time.
 
-NotebookLM knows the notebook sources, but does not know the vault. The vault knows the protocol and trusted notes, but does not know the NotebookLM source structure. A packet export prompt bridges that gap by combining:
+NotebookLM knows the notebook sources, but does not know the vault. The vault knows the protocol and trusted notes, but does not know the NotebookLM source structure.
+
+Prefer asking NotebookLM for a Source Manifest first. The local agent can then inspect the sources and create the learning packet using the whole garden.
+
+A full packet export prompt is a fallback bridge when NotebookLM has a source-access or source-organization advantage. It combines:
 
 - stable packet export requirements
 - current vault context
@@ -32,9 +36,11 @@ Examples:
 
 ## Prompt Source Artifact Rule
 
-For source-grounded tools like NotebookLM, prefer adding stable instructions as notebook sources and using a short run prompt in chat.
+For source-grounded tools like NotebookLM, prefer short run prompts first. Add stable instructions as notebook sources only when the prompt is too large or when full packet export fallback is needed.
 
-Use source artifacts for:
+For Source-Manifest-First flow, the run prompt can be short and does not need a vault context slice. Its job is to extract source provenance and notebook-level themes, not trusted wiki output.
+
+Use source artifacts for full packet export fallback:
 
 - the packet export contract
 - the vault context slice
@@ -49,6 +55,21 @@ Use the chat prompt for:
 - asking for Markdown-only output
 
 This keeps NotebookLM grounded in the same protocol while avoiding oversized chat prompts.
+
+## NotebookLM Source Manifest Rule
+
+When preparing a new NotebookLM-to-garden packet from a screenshot or notebook text, default to a Source Manifest prompt.
+
+The manifest should ask for:
+
+- notebook title
+- source count shown by NotebookLM
+- source title, author, URL, and description for each source
+- explicit `URL: unknown` where a URL is unavailable
+- 5-10 key themes or tensions
+- notes about sources that are YouTube videos, private files, uploads, or otherwise hard for the local agent to inspect
+
+Do not ask NotebookLM to promote concepts, update trusted notes, or create a full packet unless fallback is chosen.
 
 ## NotebookLM Copy-Text Source Identity Rule
 
@@ -74,7 +95,7 @@ Run prompts should refer to these marker lines, not to source filenames or UI ti
 
 ## NotebookLM Three-Text Setup Rule
 
-When preparing a new NotebookLM-to-garden packet from a screenshot or notebook text, provide the user with three copyable texts:
+When full packet export fallback is needed, provide the user with three copyable texts:
 
 - `learning-packet-export-contract`
 - `vault-context-slice`

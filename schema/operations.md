@@ -51,6 +51,12 @@ Prepare a suggested patch for an existing trusted concept note.
 
 ## Bridges
 
+**bridge.notebooklm.source-manifest**:
+Import or preserve a NotebookLM Source Manifest and use it as provenance for local packet creation.
+
+**bridge.notebooklm.source-pass**:
+Inspect relevant sources from a NotebookLM Source Manifest before local packet drafting or promotion, verifying provenance, key claims, and whether fallback is needed.
+
 **bridge.google-doc.import**:
 Import a packet export from a Google Doc URL or file ID into the learning area.
 

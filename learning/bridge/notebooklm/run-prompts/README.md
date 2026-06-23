@@ -8,3 +8,4 @@ Run prompts are bridge inputs, not imported outputs.
 
 - [[learning/bridge/notebooklm/run-prompts/architecture-of-original-thought|Architecture of Original Thought]]
 - [[learning/bridge/notebooklm/run-prompts/david-west-object-thinking|David West Object Thinking]]
+- [[learning/bridge/notebooklm/run-prompts/emoji-education-ai-communication|Emoji Education AI Communication]]

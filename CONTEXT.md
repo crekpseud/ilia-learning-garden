@@ -36,6 +36,10 @@ _Avoid_: Checklist, approval note
 A portable Markdown artifact produced by an external learning or synthesis tool that can be normalized into a learning packet. It uses fixed headings and optional YAML frontmatter so it remains readable and parseable.
 _Avoid_: NotebookLM output, pasted response
 
+**Source Manifest**:
+A compact Markdown artifact produced by an external tool that lists the notebook topic, source titles, URLs, descriptions, and optional key themes. It is used for provenance and local source checking, not as a draft trusted note.
+_Avoid_: Packet export, bibliography, source dump
+
 **Packet Export Contract**:
 The fixed-heading Markdown shape that packet exports must follow before a bridge can normalize them into learning packets.
 _Avoid_: Prompt output, import format
@@ -83,6 +87,18 @@ _Avoid_: Integration, sync
 **Manual NotebookLM Import**:
 The first NotebookLM bridge mode, where the user manually pastes a NotebookLM packet export into the inbox and the local protocol normalizes it into a learning packet.
 _Avoid_: NotebookLM sync, direct NotebookLM integration
+
+**Source-Manifest-First NotebookLM Bridge**:
+The preferred NotebookLM bridge mode where NotebookLM produces a Source Manifest and learning media, while the local agent checks sources and creates the garden-aware packet against the whole vault.
+_Avoid_: Full packet export by default, NotebookLM-as-wiki-writer
+
+**Codex Source Pass**:
+The local agent step that inspects relevant sources from a Source Manifest before drafting or promoting garden knowledge. It verifies provenance, checks key claims, and decides whether NotebookLM has a source-access advantage that justifies fallback.
+_Avoid_: Blind import, mandatory exhaustive reading
+
+**Full NotebookLM Packet Fallback**:
+The fallback bridge mode where NotebookLM is asked to produce a full Packet Export because it has source access or organization advantages the local agent lacks.
+_Avoid_: Default NotebookLM packet generation
 
 **Bridge Preparation Area**:
 The `learning/bridge/` area where locally prepared artifacts for external tools live before they are sent out, such as NotebookLM context slices and run materials.

@@ -1,12 +1,24 @@
 # Manual NotebookLM Import
 
-Manual NotebookLM import is a first-class experimental bridge. It lets the user copy a NotebookLM packet export into the vault before any Google Docs or Drive automation exists.
+Manual NotebookLM import is a first-class experimental bridge. It lets the user copy NotebookLM source manifests or packet exports into the vault before any Google Docs or Drive automation exists.
 
 Prepared context slices and other NotebookLM inputs belong in `learning/bridge/notebooklm/`. Imported NotebookLM outputs belong in `learning/inbox/notebooklm/`.
 
-Direct copy-paste from NotebookLM is currently the preferred manual import mode because it preserves literal Markdown heading markers better than Google Docs export.
+The preferred mode is Source-Manifest-First: NotebookLM provides source provenance and learning media, while the local agent creates the garden-aware packet after checking relevant sources against the whole vault.
 
-## Inbox Location
+Direct copy-paste from NotebookLM is currently the preferred manual transport mode because it preserves literal Markdown heading markers better than Google Docs export.
+
+## Source Manifest Location
+
+Paste a source manifest into:
+
+```text
+learning/inbox/notebooklm/<slug>/source-manifest.md
+```
+
+The source manifest is preserved as the source-facing NotebookLM output. It is not edited during local packet creation.
+
+## Packet Export Location
 
 Paste the external export into:
 
@@ -14,9 +26,34 @@ Paste the external export into:
 learning/inbox/notebooklm/<slug>/packet-export.md
 ```
 
-The inbox file is preserved as the source export. It is not edited during normalization.
+The packet export file is preserved as the source export. It is not edited during normalization.
 
-## Flow
+## Preferred Flow: Source Manifest First
+
+1. The user shares a NotebookLM screenshot, notebook title, or notebook summary.
+2. The local agent prepares a short NotebookLM source-manifest prompt.
+3. The user asks NotebookLM for a Source Manifest and optionally generates podcast, quiz, or flashcards.
+4. The user pastes the Source Manifest into `learning/inbox/notebooklm/<slug>/source-manifest.md` or gives it to the agent to preserve.
+5. The local agent performs a Codex Source Pass over the relevant public or provided sources.
+6. The local agent creates the learning packet directly from the source manifest, source pass, whole-garden context, and any human-contact artifact.
+7. The local agent runs local reconciliation, concept recognition, suggested patches, and gardening review.
+8. The packet remains pending human contact until the human-contact gate is complete.
+9. Promotion happens only after explicit review and approval.
+
+## Full Packet Export Fallback
+
+Use a full NotebookLM Packet Export only when NotebookLM has a meaningful source advantage:
+
+- the notebook contains YouTube videos and NotebookLM has useful transcripts
+- the notebook contains private Google Drive files the local agent cannot access
+- the notebook contains uploaded audio, images, PDFs, or other files that NotebookLM can parse more easily
+- the source set is large enough that NotebookLM's source organization is valuable
+- the Codex Source Pass finds that NotebookLM captured important cross-source structure that should be reflected in the packet
+- the user explicitly wants NotebookLM's learning-guide, podcast, or quiz framing reflected in the packet draft
+
+When fallback is used, preserve the packet export and classify it by import quality.
+
+## Packet Export Flow
 
 1. Copy the NotebookLM answer directly and paste it into the inbox path.
 2. Validate the export against [[packet-export-contract]].
@@ -62,4 +99,4 @@ During reconciliation, the local agent should:
 
 Manual import keeps the bridge small while the protocol is still changing. It gives us real learning loops and real packet artifacts before committing to sync automation.
 
-Later bridges, including Google Docs or Drive-based import, should produce the same packet artifacts and use the same reconciliation step.
+Later bridges, including Google Docs or Drive-based import, should preserve the same provenance artifacts, produce the same packet artifacts, and use the same reconciliation step.

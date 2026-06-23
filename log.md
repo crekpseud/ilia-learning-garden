@@ -149,3 +149,23 @@ Promoted [[wiki/synthesis/object-thinking-and-the-digital-garden]], [[wiki/conce
 ## [2026-06-22] concept.promote | Digital Garden Ethos
 
 Promoted [[wiki/concepts/knowledge-gardener]] and [[wiki/concepts/playful-knowledge-practice]] from [[learning/packets/digital-garden-ethos/packet]] after the user approved the previously deferred concepts. Recorded [[learning/packets/digital-garden-ethos/artifacts/gardening-review]] with the recommendation to explore emojis as a separate learning packet before adding emoji conventions to the protocol.
+
+## [2026-06-23] packet.review | Architecture of Original Thought
+
+Recorded human-contact artifact for [[learning/packets/architecture-of-original-thought/packet]] from the user's NotebookLM podcast listening notes and reflection. Updated the packet to ready-for-review and added [[learning/packets/architecture-of-original-thought/artifacts/gardening-review]] with promotion guidance around active reconstruction, desirable difficulties, cognitive offloading, and memory-value selection.
+
+## [2026-06-23] bridge.notebooklm.prepare | Emoji Education AI Communication
+
+Prepared [[learning/bridge/notebooklm/context-slices/emoji-education-ai-communication]] and [[learning/bridge/notebooklm/run-prompts/emoji-education-ai-communication]] for a NotebookLM packet about emojis, education, contextual digital symbols, and AI interpretation.
+
+## [2026-06-23] bridge.notebooklm.manual-import | Emoji Education AI Communication
+
+Preserved direct NotebookLM packet export at [[learning/inbox/notebooklm/emoji-education-ai-communication/packet-export]]. Classified the export as `repairable`: required sections were present, but local reconciliation was needed because the screenshot showed 6 sources while the export listed 5.
+
+## [2026-06-23] packet.draft | Emoji Education AI Communication
+
+Normalized the repaired NotebookLM export into [[learning/packets/emoji-education-ai-communication/packet]]. Drafted synthesis, candidate concepts, suggested patches, import repair, and [[learning/packets/emoji-education-ai-communication/artifacts/gardening-review]]. The packet is blocked from promotion pending a completed human-contact artifact.
+
+## [2026-06-23] protocol.decision | Source-Manifest-First NotebookLM Bridge
+
+Recorded [[docs/adr/0028-use-source-manifest-first-notebooklm-bridge]] after deciding that NotebookLM should usually provide source manifests and learning media, while Codex checks sources and creates garden-aware packets locally. Added [[schema/prompts/notebooklm-source-manifest-prompt]] and updated [[schema/manual-notebooklm-import]], [[schema/prompt-design]], [[schema/operations]], and [[CONTEXT]].

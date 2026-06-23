@@ -29,6 +29,7 @@ Architectural decisions that shape the Markdown-first learning protocol.
 - [[0025-require-active-gardening-review]]
 - [[0026-use-public-seed-and-private-working-garden]]
 - [[0027-use-agent-proposed-seed-promotions]]
+- [[0028-use-source-manifest-first-notebooklm-bridge]]
 
 ## Review And Promotion
 

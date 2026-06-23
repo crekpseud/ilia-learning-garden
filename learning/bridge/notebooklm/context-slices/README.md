@@ -9,3 +9,4 @@ Each slice is a local bridge input artifact. Add it to NotebookLM as a source, t
 - [[learning/bridge/notebooklm/context-slices/evergreen-notes|Evergreen Notes]]
 - [[learning/bridge/notebooklm/context-slices/architecture-of-original-thought|Architecture of Original Thought]]
 - [[learning/bridge/notebooklm/context-slices/david-west-object-thinking|David West Object Thinking]]
+- [[learning/bridge/notebooklm/context-slices/emoji-education-ai-communication|Emoji Education AI Communication]]

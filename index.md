@@ -32,8 +32,9 @@ Content-oriented index for the vault.
 - [[learning/packets/digital-garden-ethos/packet|Digital Garden Ethos]] - Promoted packet based on Maggie Appleton's article about digital gardens, used to test concept recognition and linking to the LLM Wiki Pattern.
 - [[learning/packets/knowledge-gardening/packet|Cultivating Knowledge: The Digital Garden and the Stream]] - Promoted packet imported from a manual NotebookLM export about knowledge gardening.
 - [[learning/packets/evergreen-notes/packet|Evergreen Notes: A System for Evolving Insight]] - Promoted packet imported from a direct NotebookLM copy-paste about evergreen notes.
-- [[learning/packets/architecture-of-original-thought/packet|Mastering the Architecture of Original Thought]] - Pending-human-contact packet imported from a NotebookLM notebook about effective learning, independent thought, and active reconstruction.
+- [[learning/packets/architecture-of-original-thought/packet|Mastering the Architecture of Original Thought]] - Ready-for-review packet imported from a NotebookLM notebook about effective learning, independent thought, and active reconstruction.
 - [[learning/packets/david-west-object-thinking/packet|Reflections on David West's Object Thinking]] - Promoted packet imported from a NotebookLM notebook about Object Thinking, metaphor, procedural habits, and software pragmatism.
+- [[learning/packets/emoji-education-ai-communication/packet|Decoding Digital Symbols: Emojis in Education and AI Communication]] - Pending-human-contact packet imported from a NotebookLM notebook about emojis, education, contextual symbol meaning, and AI interpretation.
 
 ## Raw Sources
 
@@ -42,6 +43,7 @@ Content-oriented index for the vault.
 - [[raw/sources/evergreen-notes-notebook|Evergreen Notes NotebookLM Export]] - Source record for the direct NotebookLM packet export.
 - [[raw/sources/original-thought-notebook|Mastering the Architecture of Original Thought Notebook]] - Source record for a captured NotebookLM notebook about active learning and independent thought.
 - [[raw/sources/david-west-object-thinking-notebook|Reflections on David West's Object Thinking Notebook]] - Source record for a NotebookLM packet export about David West's Object Thinking.
+- [[raw/sources/emoji-education-ai-communication-notebook|Decoding Digital Symbols Notebook]] - Source record for a NotebookLM packet export about emojis in education and AI communication.
 
 ## Project Context
 
