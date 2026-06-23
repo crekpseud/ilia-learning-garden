@@ -2,7 +2,7 @@
 type: learning-packet
 slug: architecture-of-original-thought
 title: Mastering the Architecture of Original Thought
-status: ready-for-review
+status: promoted
 created: 2026-06-22
 source_tools:
   - NotebookLM
@@ -53,4 +53,16 @@ The export did not satisfy the strict packet export contract. Local normalizatio
 
 ## Promotion Output
 
-Human contact has been provided. Promotion now requires explicit review approval in [[learning/packets/architecture-of-original-thought/review]].
+Promoted on 2026-06-23 according to [[learning/packets/architecture-of-original-thought/review]].
+
+Promoted trusted notes:
+
+- [[wiki/synthesis/original-thought-as-active-reconstruction]]
+- [[wiki/concepts/first-principles-reasoning]]
+- [[wiki/concepts/desirable-difficulties]]
+
+Applied approved patches to:
+
+- [[wiki/synthesis/llm-wiki-pattern]]
+- [[wiki/synthesis/digital-garden-ethos]]
+- [[wiki/concepts/digital-garden]]

@@ -24,6 +24,8 @@ The user's reflection adds an important constraint: gardening metaphors should m
 
 The garden metaphor becomes more concrete through [[wiki/concepts/evergreen-note|Evergreen Note]] practice. Writing notes in one's own words is not merely capture; it is a form of tending that strengthens memory and understanding through the generation effect.
 
+Tending a digital garden should include active reconstruction, not only curation. Practices such as retrieval, teach-back, first-principles questioning, and spaced return make the garden slower to grow in the short term, but help prevent familiarity from masquerading as understanding.
+
 David West's [[wiki/concepts/object-thinking|Object Thinking]] offers a software-design parallel to the digital garden metaphor. It treats software less as a machine assembled from passive parts and more as a community of collaborating objects with responsibilities, behaviors, and contextual roles. The metaphor is useful when it improves domain understanding, but it must still survive contact with implementation practice.
 
 For this project, the strongest alignment is with four existing protocol principles:
@@ -52,6 +54,7 @@ For this project, the strongest alignment is with four existing protocol princip
 - Links to [[wiki/synthesis/technopastoral-synthesis]], which sharpens the contrast between gardens and streams.
 - Links to [[wiki/synthesis/evergreen-notes-as-evolving-insight]], which names the note-level practice behind living garden knowledge.
 - Links to [[wiki/synthesis/object-thinking-and-the-digital-garden]], which extends living-system metaphors into software design while keeping pragmatism visible.
+- Links to [[wiki/synthesis/original-thought-as-active-reconstruction]], which adds retrieval, first-principles questioning, and desirable difficulty as forms of tending.
 - Links to [[wiki/concepts/the-ritualization-trap]], which keeps the garden metaphor from becoming maintenance for its own sake.
 - Supports [[docs/adr/0005-treat-markdown-as-the-codebase]] because portable Markdown is a durable ownership strategy.
 - Supports [[docs/adr/0007-use-protocol-first-top-level-structure]] because the vault itself should expose its knowledge topology.
@@ -72,6 +75,8 @@ For this project, the strongest alignment is with four existing protocol princip
 - [[raw/sources/digital-garden-ethos]]
 - [[learning/packets/evergreen-notes/packet]]
 - [[learning/packets/david-west-object-thinking/packet]]
+- [[learning/packets/architecture-of-original-thought/packet]]
 - [[raw/sources/evergreen-notes-notebook]]
 - [[raw/sources/david-west-object-thinking-notebook]]
+- [[raw/sources/original-thought-notebook]]
 - https://maggieappleton.com/garden-history

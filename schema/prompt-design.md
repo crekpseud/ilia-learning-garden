@@ -8,14 +8,16 @@ Keep prompt templates stable and inject current context at use time.
 
 NotebookLM knows the notebook sources, but does not know the vault. The vault knows the protocol and trusted notes, but does not know the NotebookLM source structure.
 
-Prefer asking NotebookLM for a Source Manifest first. The local agent can then inspect the sources and create the learning packet using the whole garden.
+For source-heavy NotebookLM notebooks, prefer asking NotebookLM for a full Packet Export after adding the packet export contract and a topic-specific vault context slice as sources. NotebookLM is allowed to do the heavy source digestion; the local garden agent validates, repairs, reconciles, and gardens the result.
 
-A full packet export prompt is a fallback bridge when NotebookLM has a source-access or source-organization advantage. It combines:
+A full packet export prompt combines:
 
 - stable packet export requirements
 - current vault context
 - topic-specific guidance
 - human-contact material
+
+A Source Manifest prompt is a diagnostic bridge when provenance, URL recovery, blocked sources, or packet quality need investigation.
 
 ## Prompt Template Rule
 
@@ -36,11 +38,9 @@ Examples:
 
 ## Prompt Source Artifact Rule
 
-For source-grounded tools like NotebookLM, prefer short run prompts first. Add stable instructions as notebook sources only when the prompt is too large or when full packet export fallback is needed.
+For source-grounded tools like NotebookLM, keep stable instructions as copied-text sources and use short run prompts that refer to those sources by `GARDEN_META_SOURCE_ID`.
 
-For Source-Manifest-First flow, the run prompt can be short and does not need a vault context slice. Its job is to extract source provenance and notebook-level themes, not trusted wiki output.
-
-Use source artifacts for full packet export fallback:
+Use source artifacts for normal NotebookLM packet export:
 
 - the packet export contract
 - the vault context slice
@@ -58,18 +58,24 @@ This keeps NotebookLM grounded in the same protocol while avoiding oversized cha
 
 ## NotebookLM Source Manifest Rule
 
-When preparing a new NotebookLM-to-garden packet from a screenshot or notebook text, default to a Source Manifest prompt.
+When source provenance or packet quality needs investigation, ask NotebookLM for a Source Manifest.
 
 The manifest should ask for:
 
 - notebook title
 - source count shown by NotebookLM
 - source title, author, URL, and description for each source
-- explicit `URL: unknown` where a URL is unavailable
+- exact URLs for web and YouTube sources
+- `not applicable - uploaded file` or `not applicable - copied text` when there is no URL-bearing source
+- URL visibility labels such as `exact`, `domain-only`, `not-visible`, and `not-applicable`
+- local recovery actions so the agent knows what to search, request, replace, or treat as NotebookLM-only
+- a `NOT READY` preflight response only when there are zero usable learning sources
 - 5-10 key themes or tensions
 - notes about sources that are YouTube videos, private files, uploads, or otherwise hard for the local agent to inspect
 
-Do not ask NotebookLM to promote concepts, update trusted notes, or create a full packet unless fallback is chosen.
+Do not ask NotebookLM to promote concepts or update trusted notes.
+
+Do not use Source Manifest as the default for large source-heavy notebooks. In those cases, NotebookLM's ability to digest books, large PDFs, YouTube transcripts, uploaded files, and mixed source sets is the bridge's main value.
 
 ## NotebookLM Copy-Text Source Identity Rule
 
@@ -95,7 +101,7 @@ Run prompts should refer to these marker lines, not to source filenames or UI ti
 
 ## NotebookLM Three-Text Setup Rule
 
-When full packet export fallback is needed, provide the user with three copyable texts:
+When preparing a new NotebookLM packet export, provide the user with three copyable texts:
 
 - `learning-packet-export-contract`
 - `vault-context-slice`

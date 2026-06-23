@@ -1,11 +1,24 @@
 ---
 type: draft-concepts
 packet: "[[learning/packets/architecture-of-original-thought/packet]]"
-status: ready-for-review
+status: partially-promoted
 created: 2026-06-22
 ---
 
 # Candidate Concepts
+
+Promoted:
+
+- [[wiki/concepts/first-principles-reasoning]]
+- [[wiki/concepts/desirable-difficulties]]
+
+Deferred:
+
+- Active Reconstruction
+- Illusion of Competence
+- Cognitive Offloading
+- Bloom's Taxonomy
+- Levels of Reading
 
 ## First-Principles Reasoning
 

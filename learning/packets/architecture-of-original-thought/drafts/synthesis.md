@@ -1,7 +1,7 @@
 ---
 type: draft-synthesis
 packet: "[[learning/packets/architecture-of-original-thought/packet]]"
-status: ready-for-review
+status: promoted
 created: 2026-06-22
 recognized_existing_notes:
   - "[[wiki/synthesis/digital-garden-ethos]]"
@@ -11,6 +11,8 @@ recognized_existing_notes:
 ---
 
 # Original Thought Requires Active Reconstruction
+
+Promoted as [[wiki/synthesis/original-thought-as-active-reconstruction]].
 
 ## Core Understanding
 

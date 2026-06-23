@@ -30,6 +30,7 @@ Architectural decisions that shape the Markdown-first learning protocol.
 - [[0026-use-public-seed-and-private-working-garden]]
 - [[0027-use-agent-proposed-seed-promotions]]
 - [[0028-use-source-manifest-first-notebooklm-bridge]]
+- [[0029-use-notebooklm-packet-export-as-default-source-heavy-bridge]]
 
 ## Review And Promotion
 

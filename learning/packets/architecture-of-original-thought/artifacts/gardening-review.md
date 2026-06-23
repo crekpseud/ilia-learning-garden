@@ -72,3 +72,17 @@ Possible deferrals:
 ## Caution
 
 Do not turn this packet into an obligation to build a flashcard system. The more important design question is how the garden can preserve active reconstruction without recreating the same high-pressure loop that made spaced repetition hard to sustain.
+
+## Promotion Outcome
+
+Promoted on 2026-06-23:
+
+- [[wiki/synthesis/original-thought-as-active-reconstruction]]
+- [[wiki/concepts/first-principles-reasoning]]
+- [[wiki/concepts/desirable-difficulties]]
+
+Deferred for future packets or explicit approval:
+
+- Active Reconstruction
+- Illusion of Competence
+- Cognitive Offloading

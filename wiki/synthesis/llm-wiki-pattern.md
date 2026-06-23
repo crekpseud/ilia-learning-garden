@@ -23,6 +23,8 @@ This pattern explains why a personal learning system should not stop at source c
 
 For this project, the pattern validates treating the vault as a Markdown codebase. Obsidian can be the IDE, Codex can be the first automation client, NotebookLM can be a synthesis server, and Google Drive can be a bridge, but the Markdown protocol remains the durable system boundary.
 
+An LLM-maintained wiki should not optimize only for frictionless synthesis. If the system removes all cognitive effort, it can produce an illusion of competence: the learner can navigate polished notes without being able to retrieve, explain, or apply the underlying ideas. The wiki should therefore preserve human-contact artifacts that show active reconstruction.
+
 ## Key Ideas
 
 - A persistent wiki can accumulate synthesized knowledge instead of forcing every query to reconstruct context from raw sources.
@@ -50,4 +52,5 @@ For this project, the pattern validates treating the vault as a Markdown codebas
 ## Sources
 
 - [[docs/research/karpathy-llm-wiki]]
+- [[learning/packets/architecture-of-original-thought/packet]]
 - https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f

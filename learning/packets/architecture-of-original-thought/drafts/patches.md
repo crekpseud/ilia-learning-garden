@@ -1,11 +1,17 @@
 ---
 type: suggested-patches
 packet: "[[learning/packets/architecture-of-original-thought/packet]]"
-status: ready-for-review
+status: applied
 created: 2026-06-22
 ---
 
 # Suggested Patches
+
+Applied on 2026-06-23 to:
+
+- [[wiki/synthesis/llm-wiki-pattern]]
+- [[wiki/synthesis/digital-garden-ethos]]
+- [[wiki/concepts/digital-garden]]
 
 ## Patch: [[wiki/synthesis/llm-wiki-pattern]]
 

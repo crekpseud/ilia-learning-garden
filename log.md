@@ -169,3 +169,31 @@ Normalized the repaired NotebookLM export into [[learning/packets/emoji-educatio
 ## [2026-06-23] protocol.decision | Source-Manifest-First NotebookLM Bridge
 
 Recorded [[docs/adr/0028-use-source-manifest-first-notebooklm-bridge]] after deciding that NotebookLM should usually provide source manifests and learning media, while Codex checks sources and creates garden-aware packets locally. Added [[schema/prompts/notebooklm-source-manifest-prompt]] and updated [[schema/manual-notebooklm-import]], [[schema/prompt-design]], [[schema/operations]], and [[CONTEXT]].
+
+## [2026-06-23] protocol.maintenance | Source Manifest Provenance Hardening
+
+Hardened [[schema/prompts/notebooklm-source-manifest-prompt]] after a NotebookLM Source Manifest returned mostly `URL: unknown` entries and treated access-blocker pages as sources. The prompt now requires exact URLs for URL-based sources and returns a `NOT READY` preflight when provenance is incomplete.
+
+## [2026-06-23] protocol.maintenance | Source Manifest Provenance Calibration
+
+Softened [[schema/prompts/notebooklm-source-manifest-prompt]] after the strict provenance preflight proved too brittle. Source manifests now label URL visibility and local recovery actions instead of failing the whole manifest when public URLs can likely be recovered by Codex search.
+
+## [2026-06-23] protocol.decision | NotebookLM Packet Export Default
+
+Recorded [[docs/adr/0029-use-notebooklm-packet-export-as-default-source-heavy-bridge]] after deciding that source-heavy NotebookLM notebooks should return to full Packet Export by default. Source Manifest remains as a diagnostic provenance tool, but NotebookLM should do the heavy digestion for books, large PDFs, transcripts, uploaded files, and large mixed source sets. Updated [[schema/manual-notebooklm-import]], [[schema/prompt-design]], [[schema/prompts/README]], [[schema/operations]], and [[CONTEXT]].
+
+## [2026-06-23] bridge.notebooklm.prepare | Agentic AI Architectures Frameworks Operational Loops
+
+Prepared [[learning/bridge/notebooklm/context-slices/agentic-ai-architectures-frameworks-operational-loops]] and [[learning/bridge/notebooklm/run-prompts/agentic-ai-architectures-frameworks-operational-loops]] for a NotebookLM packet about agentic AI architectures, planning, tools, memory, feedback mechanisms, loop engineering, and operational risks.
+
+## [2026-06-23] packet.promote | Architecture Of Original Thought
+
+Promoted [[wiki/synthesis/original-thought-as-active-reconstruction]], [[wiki/concepts/first-principles-reasoning]], and [[wiki/concepts/desirable-difficulties]] from [[learning/packets/architecture-of-original-thought/packet]]. Applied approved patches to [[wiki/synthesis/llm-wiki-pattern]], [[wiki/synthesis/digital-garden-ethos]], and [[wiki/concepts/digital-garden]]. Deferred `Active Reconstruction`, `Illusion of Competence`, `Cognitive Offloading`, `Bloom's Taxonomy`, and `Levels of Reading`.
+
+## [2026-06-23] bridge.notebooklm.manual-import | Agentic AI Architectures Frameworks Operational Loops
+
+Preserved direct NotebookLM packet export at [[learning/inbox/notebooklm/agentic-ai-architectures-frameworks-operational-loops/packet-export]]. Classified the export as `repairable`: required sections were present, but source URLs were incomplete, the screenshot showed 10 sources while the export listed 8, and the human-contact section contained a generated podcast brief rather than completed human contact.
+
+## [2026-06-23] packet.draft | Agentic AI Architectures Frameworks Operational Loops
+
+Normalized the repaired NotebookLM export into [[learning/packets/agentic-ai-architectures-frameworks-operational-loops/packet]]. Drafted synthesis, candidate concepts, suggested patches, import repair, and [[learning/packets/agentic-ai-architectures-frameworks-operational-loops/artifacts/gardening-review]]. The packet is blocked from promotion pending a completed human-contact artifact.

@@ -15,11 +15,13 @@ For NotebookLM copy-text setup, prepare exactly three texts for the user:
 - the topic-specific vault context slice, with `GARDEN_META_SOURCE_ID: vault-context-slice:<topic-slug>`
 - the run prompt, which refers to both sources by `GARDEN_META_SOURCE_ID` marker rather than NotebookLM filename
 
-For the preferred Source-Manifest-First NotebookLM bridge, prepare a single short source-manifest prompt first. Use the three-text packet export setup only as fallback.
+For source-heavy NotebookLM notebooks, this three-text packet export setup is the default. Let NotebookLM digest the notebook sources, then let the local garden agent validate, reconcile, repair, and garden the result.
+
+Use the source-manifest prompt only as a diagnostic or provenance audit when source URLs, blocked sources, duplicate entries, or packet export quality need investigation.
 
 ## Available Prompts
 
-- [[notebooklm-source-manifest-prompt]] - Ask NotebookLM for a compact source manifest before local packet creation.
+- [[notebooklm-source-manifest-prompt]] - Ask NotebookLM for a compact source manifest during provenance or packet-quality diagnosis.
 - [[notebooklm-contract-source]] - Add this as a NotebookLM source containing the stable packet export contract.
 - [[vault-context-slice-template]] - Create a topic-specific vault context source for NotebookLM.
 - [[notebooklm-run-prompt]] - Short chat prompt that asks NotebookLM to produce the packet export from its sources.

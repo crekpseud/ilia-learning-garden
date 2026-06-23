@@ -4,11 +4,15 @@ Manual NotebookLM import is a first-class experimental bridge. It lets the user 
 
 Prepared context slices and other NotebookLM inputs belong in `learning/bridge/notebooklm/`. Imported NotebookLM outputs belong in `learning/inbox/notebooklm/`.
 
-The preferred mode is Source-Manifest-First: NotebookLM provides source provenance and learning media, while the local agent creates the garden-aware packet after checking relevant sources against the whole vault.
+The preferred mode for source-heavy notebooks is NotebookLM Packet Export Bridge: NotebookLM receives the packet export contract, a topic-specific vault context slice, and a short run prompt, then produces a full packet export from the notebook's sources.
+
+Source Manifest is a diagnostic mode, not the default. Use it when source provenance, blocked sources, missing URLs, or packet export quality need investigation.
 
 Direct copy-paste from NotebookLM is currently the preferred manual transport mode because it preserves literal Markdown heading markers better than Google Docs export.
 
 ## Source Manifest Location
+
+Use this only for Source Manifest diagnostic runs.
 
 Paste a source manifest into:
 
@@ -28,32 +32,42 @@ learning/inbox/notebooklm/<slug>/packet-export.md
 
 The packet export file is preserved as the source export. It is not edited during normalization.
 
-## Preferred Flow: Source Manifest First
+## Preferred Flow: Packet Export
 
 1. The user shares a NotebookLM screenshot, notebook title, or notebook summary.
-2. The local agent prepares a short NotebookLM source-manifest prompt.
-3. The user asks NotebookLM for a Source Manifest and optionally generates podcast, quiz, or flashcards.
-4. The user pastes the Source Manifest into `learning/inbox/notebooklm/<slug>/source-manifest.md` or gives it to the agent to preserve.
-5. The local agent performs a Codex Source Pass over the relevant public or provided sources.
-6. The local agent creates the learning packet directly from the source manifest, source pass, whole-garden context, and any human-contact artifact.
+2. The local agent prepares three copyable NotebookLM texts:
+   - `learning-packet-export-contract`
+   - a topic-specific `vault-context-slice`
+   - a short `notebooklm-run-prompt`
+3. The user adds the packet export contract and vault context slice to NotebookLM as copied-text sources alongside the learning sources.
+4. The user runs the prompt in NotebookLM and optionally generates podcast, quiz, or flashcards.
+5. The user pastes the direct NotebookLM packet export into `learning/inbox/notebooklm/<slug>/packet-export.md` or gives it to the agent to preserve.
+6. The local agent validates the export against [[packet-export-contract]] and classifies import quality.
 7. The local agent runs local reconciliation, concept recognition, suggested patches, and gardening review.
 8. The packet remains pending human contact until the human-contact gate is complete.
 9. Promotion happens only after explicit review and approval.
 
-## Full Packet Export Fallback
+This flow deliberately lets NotebookLM do source-heavy digestion, especially for large PDFs, books, YouTube transcripts, uploaded files, private Drive materials, and large mixed source sets. The local garden agent should not try to reproduce that heavy lifting unless the user asks for a source audit.
 
-Use a full NotebookLM Packet Export only when NotebookLM has a meaningful source advantage:
+## Source Manifest Diagnostic Flow
 
-- the notebook contains YouTube videos and NotebookLM has useful transcripts
-- the notebook contains private Google Drive files the local agent cannot access
-- the notebook contains uploaded audio, images, PDFs, or other files that NotebookLM can parse more easily
-- the source set is large enough that NotebookLM's source organization is valuable
-- the Codex Source Pass finds that NotebookLM captured important cross-source structure that should be reflected in the packet
-- the user explicitly wants NotebookLM's learning-guide, podcast, or quiz framing reflected in the packet draft
+Use Source Manifest only when one of these is true:
 
-When fallback is used, preserve the packet export and classify it by import quality.
+- source provenance is unclear or the packet export lists weak/unknown URLs
+- sources appear to be access blockers, login walls, or duplicated entries
+- the packet export quality is poor enough that rerunning NotebookLM may be better than local repair
+- the local agent needs source clues to recover public URLs
+- the user explicitly asks whether Codex can do the packet locally
 
-## Packet Export Flow
+When diagnostic mode is used, preserve the source manifest and treat it as a provenance artifact, not a packet draft.
+
+1. The local agent prepares a short NotebookLM source-manifest prompt.
+2. The user asks NotebookLM for a Source Manifest.
+3. The user pastes the Source Manifest into `learning/inbox/notebooklm/<slug>/source-manifest.md` or gives it to the agent to preserve.
+4. The local agent performs a targeted Codex Source Pass only for sources or claims that need checking.
+5. The local agent decides whether to repair the existing packet export, rerun the NotebookLM packet export prompt, ask the user for missing sources, or proceed with local reconciliation.
+
+## Packet Export Import Flow
 
 1. Copy the NotebookLM answer directly and paste it into the inbox path.
 2. Validate the export against [[packet-export-contract]].

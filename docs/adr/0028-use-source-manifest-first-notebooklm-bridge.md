@@ -1,5 +1,7 @@
 # Use source-manifest-first NotebookLM bridge
 
+Status: Superseded by [[0029-use-notebooklm-packet-export-as-default-source-heavy-bridge]].
+
 NotebookLM should usually produce a compact source manifest, not a full learning packet. Codex should then inspect the relevant sources and create the garden-aware packet locally, using the whole vault for reconciliation, linking, candidate concepts, suggested patches, and gardening review.
 
 **Context**

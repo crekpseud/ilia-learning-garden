@@ -37,7 +37,7 @@ A portable Markdown artifact produced by an external learning or synthesis tool 
 _Avoid_: NotebookLM output, pasted response
 
 **Source Manifest**:
-A compact Markdown artifact produced by an external tool that lists the notebook topic, source titles, URLs, descriptions, and optional key themes. It is used for provenance and local source checking, not as a draft trusted note.
+A compact Markdown artifact produced by an external tool that lists the notebook topic, source titles, URLs, descriptions, source visibility, and optional key themes. It is used for provenance audits, source recovery, and import diagnosis, not as the default NotebookLM packet input.
 _Avoid_: Packet export, bibliography, source dump
 
 **Packet Export Contract**:
@@ -88,17 +88,21 @@ _Avoid_: Integration, sync
 The first NotebookLM bridge mode, where the user manually pastes a NotebookLM packet export into the inbox and the local protocol normalizes it into a learning packet.
 _Avoid_: NotebookLM sync, direct NotebookLM integration
 
+**NotebookLM Packet Export Bridge**:
+The default source-heavy NotebookLM bridge mode where NotebookLM receives the packet export contract, a topic-specific vault context slice, and a short run prompt, then produces a full Packet Export from the notebook's sources.
+_Avoid_: Source manifest by default, local source digestion, NotebookLM-as-trusted-wiki
+
 **Source-Manifest-First NotebookLM Bridge**:
-The preferred NotebookLM bridge mode where NotebookLM produces a Source Manifest and learning media, while the local agent checks sources and creates the garden-aware packet against the whole vault.
-_Avoid_: Full packet export by default, NotebookLM-as-wiki-writer
+An experimental or diagnostic NotebookLM bridge mode where NotebookLM produces a Source Manifest and learning media, while the local agent checks sources and creates the garden-aware packet against the whole vault. Use it when provenance, blocked sources, or packet quality need investigation, not as the default for source-heavy notebooks.
+_Avoid_: Default NotebookLM packet generation, NotebookLM-as-wiki-writer
 
 **Codex Source Pass**:
-The local agent step that inspects relevant sources from a Source Manifest before drafting or promoting garden knowledge. It verifies provenance, checks key claims, and decides whether NotebookLM has a source-access advantage that justifies fallback.
-_Avoid_: Blind import, mandatory exhaustive reading
+The local agent step that inspects selected sources or source clues from a Source Manifest when provenance or packet quality needs investigation. It verifies recoverable public sources and decides whether a NotebookLM packet export should be rerun or repaired.
+_Avoid_: Blind import, mandatory exhaustive reading, replacing NotebookLM source digestion
 
 **Full NotebookLM Packet Fallback**:
-The fallback bridge mode where NotebookLM is asked to produce a full Packet Export because it has source access or organization advantages the local agent lacks.
-_Avoid_: Default NotebookLM packet generation
+A legacy term for what is now the default NotebookLM Packet Export Bridge. Prefer the newer term unless describing the earlier source-manifest-first experiment.
+_Avoid_: Current canonical flow
 
 **Bridge Preparation Area**:
 The `learning/bridge/` area where locally prepared artifacts for external tools live before they are sent out, such as NotebookLM context slices and run materials.

@@ -30,13 +30,18 @@ The garden also acts as a foil to [[wiki/concepts/the-stream]]: a timeline-first
 
 The garden can also be read as a community of interacting objects: notes, links, packets, sources, and agents each carry responsibilities and participate in larger patterns. This analogy is useful only when it clarifies behavior and relationships rather than turning software design into decorative metaphor.
 
+An AI-augmented digital garden should distinguish scaffolding from outsourcing. AI can help gather, compare, and draft, but trusted garden knowledge should still pass through the gardener's own reconstruction before promotion.
+
 ## Related Concepts
 
 - [[wiki/synthesis/digital-garden-ethos]]
 - [[wiki/synthesis/technopastoral-synthesis]]
 - [[wiki/synthesis/evergreen-notes-as-evolving-insight]]
 - [[wiki/synthesis/object-thinking-and-the-digital-garden]]
+- [[wiki/synthesis/original-thought-as-active-reconstruction]]
 - [[wiki/concepts/evergreen-note]]
+- [[wiki/concepts/desirable-difficulties]]
+- [[wiki/concepts/first-principles-reasoning]]
 - [[wiki/concepts/object-thinking]]
 - [[wiki/concepts/note-titles-as-apis]]
 - [[wiki/concepts/the-ritualization-trap]]
@@ -49,7 +54,9 @@ The garden can also be read as a community of interacting objects: notes, links,
 - [[learning/packets/digital-garden-ethos/packet]]
 - [[learning/packets/evergreen-notes/packet]]
 - [[learning/packets/david-west-object-thinking/packet]]
+- [[learning/packets/architecture-of-original-thought/packet]]
 - [[raw/sources/digital-garden-ethos]]
 - [[raw/sources/evergreen-notes-notebook]]
 - [[raw/sources/david-west-object-thinking-notebook]]
+- [[raw/sources/original-thought-notebook]]
 - https://maggieappleton.com/garden-history
