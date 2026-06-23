@@ -96,6 +96,26 @@ _Avoid_: Bridge preparation, generated source material
 A restricted fork of the garden that may receive personal-garden protocol and public knowledge updates, but must never export work knowledge back to the personal garden.
 _Avoid_: Two-way sync, shared work/personal garden
 
+**Public Seed Garden**:
+A public, reusable starter garden containing protocol, schemas, ADRs, agent instructions, prompt templates, public-safe examples, and a small starter wiki.
+_Avoid_: Public copy of the private garden, sanitized branch
+
+**Private Working Garden**:
+The lived garden where day-to-day learning happens, including private sources, human-contact artifacts, reading ledgers, personal context, and unfinished packets.
+_Avoid_: Public seed, shared starter kit
+
+**Seed Promotion**:
+The approval-gated act of moving a public-safe protocol improvement or starter artifact from a private working garden into the public seed garden.
+_Avoid_: Sync, mirror, automatic publish
+
+**Public-Safe Patch**:
+A patch that is intentionally prepared for the public seed garden and contains no private packet exports, personal reflections, reading ledgers, work material, or hidden personal context.
+_Avoid_: Best-effort redaction, private diff
+
+**Private Garden Material**:
+Any material that belongs only in a private working garden by default, including human-contact reflections, private source exports, reading history, personal profile material, and work-related knowledge.
+_Avoid_: Seed content, example data
+
 **Google Docs Bridge**:
 The first bridge, which imports a packet export from a specific Google Doc URL or file ID and normalizes it into a learning packet.
 _Avoid_: Drive sync, NotebookLM integration

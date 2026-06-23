@@ -48,6 +48,7 @@ Content-oriented index for the vault.
 - [[CONTEXT]] - Domain language for the learning pipeline.
 - [[docs/context/project-idea]] - Project vision, constraints, and open questions.
 - [[docs/planning/initial-milestones]] - Initial milestone sequence.
+- [[docs/planning/public-seed-extraction]] - Audit and plan for extracting a clean public seed from the current private working garden.
 - [[schema/README|Protocol Schema]] - Rules, templates, prompts, and validation conventions.
 - [[docs/adr/README|Decision Log]] - Architectural decisions that shape the garden protocol.
 - [[AGENTS]] - Portable instructions for AI agents operating on the garden.

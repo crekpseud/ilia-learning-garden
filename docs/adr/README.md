@@ -27,6 +27,8 @@ Architectural decisions that shape the Markdown-first learning protocol.
 - [[0023-classify-external-packet-exports-by-import-quality]]
 - [[0024-use-embedded-meta-source-ids-for-notebooklm-copy-text]]
 - [[0025-require-active-gardening-review]]
+- [[0026-use-public-seed-and-private-working-garden]]
+- [[0027-use-agent-proposed-seed-promotions]]
 
 ## Review And Promotion
 

@@ -1,5 +1,7 @@
 # Use this repository as the seed vault
 
+Refined by [[0026-use-public-seed-and-private-working-garden]].
+
 This repository will start as the first living vault and protocol template rather than only tooling around a separate future vault. Project documentation, schema, learning packets, trusted wiki notes, and eventual tools can co-evolve here; tooling can be extracted later if reuse demands it.
 
 **Considered Options**

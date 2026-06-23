@@ -50,6 +50,24 @@ Forbidden:
 
 Use one-way import language, not sync language.
 
+## Public Seed Boundary
+
+If this garden is split into a public seed garden and a private working garden, treat them as separate folders and separate repositories, not branches.
+
+Allowed:
+
+- Propose public-safe protocol improvements from the private garden.
+- Apply approved protocol patches to the public seed checkout.
+- Pull public seed protocol updates into private or downstream gardens.
+
+Forbidden:
+
+- Treat public and private gardens as bidirectional sync peers.
+- Copy private packet exports, human-contact reflections, reading ledgers, personal profile material, or work knowledge into the public seed.
+- Rely on `visibility: private`, branch names, or `.gitignore` as the only privacy boundary.
+
+Use allowlist language for public seed changes. Prefer `seed promotion`, not sync.
+
 ## Editing Rules
 
 - Keep files Markdown-first and link-rich.

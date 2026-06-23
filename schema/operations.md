@@ -27,6 +27,17 @@ Actively interpret a packet, promotion, or trusted-wiki change in the context of
 **garden.propose**:
 Record non-binding proposals that arise from gardening review, such as next packets, suggested patches, maintenance tasks, or warnings about over-optimization.
 
+## Seed
+
+**seed.review**:
+Inspect a private working garden for reusable protocol improvements, public-seed drift, privacy risks, and public-safe extraction opportunities.
+
+**seed.propose**:
+Prepare an approval-gated proposal for applying public-safe protocol improvements from a private working garden to a public seed checkout.
+
+**seed.promote**:
+Apply an approved public-safe patch to the public seed garden. This operation must be allowlist-based and must not copy private garden material by default.
+
 ## Concepts
 
 **concept.recognize**:
