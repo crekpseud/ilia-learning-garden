@@ -17,3 +17,5 @@ Do not promote knowledge into `wiki/` unless the packet has a human-contact arti
 If this repository is being used as a downstream work garden, never prepare exports, patches, summaries, or prompts that move work-specific knowledge back to the personal garden. Personal-to-work import may be allowed; work-to-personal export is forbidden.
 
 When uncertain, ask for a review decision instead of applying protocol-changing edits.
+
+For reusable insight capture during a session, follow `skills/learning-garden-capture/SKILL.md`. Approved captures go to `learning/inbox/agent-captures/<slug>/packet-export.md`; they do not go directly into `wiki/`.

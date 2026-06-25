@@ -59,3 +59,8 @@ Content-oriented index for the vault.
 - [[schema/README|Protocol Schema]] - Rules, templates, prompts, and validation conventions.
 - [[docs/adr/README|Decision Log]] - Architectural decisions that shape the garden protocol.
 - [[AGENTS]] - Portable instructions for AI agents operating on the garden.
+- [[skills/README|Agent Skills]] - Optional reusable agent skills for garden workflows.
+
+## Agent Skills
+
+- [[skills/learning-garden-capture/SKILL|Learning Garden Capture]] - Capture reusable work-session or learning-session insights into `learning/inbox/` without promoting them into trusted wiki.

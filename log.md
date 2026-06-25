@@ -197,3 +197,7 @@ Preserved direct NotebookLM packet export at [[learning/inbox/notebooklm/agentic
 ## [2026-06-23] packet.draft | Agentic AI Architectures Frameworks Operational Loops
 
 Normalized the repaired NotebookLM export into [[learning/packets/agentic-ai-architectures-frameworks-operational-loops/packet]]. Drafted synthesis, candidate concepts, suggested patches, import repair, and [[learning/packets/agentic-ai-architectures-frameworks-operational-loops/artifacts/gardening-review]]. The packet is blocked from promotion pending a completed human-contact artifact.
+
+## [2026-06-25] seed.import | Learning Garden Capture Skill
+
+Imported [[skills/learning-garden-capture/SKILL]] from the public seed into the private working garden so local agents can capture reusable session insights into `learning/inbox/agent-captures/` without bypassing human-contact or promotion review.
