@@ -39,6 +39,7 @@ Content-oriented index for the vault.
 - [[learning/packets/david-west-object-thinking/packet|Reflections on David West's Object Thinking]] - Promoted packet imported from a NotebookLM notebook about Object Thinking, metaphor, procedural habits, and software pragmatism.
 - [[learning/packets/emoji-education-ai-communication/packet|Decoding Digital Symbols: Emojis in Education and AI Communication]] - Pending-human-contact packet imported from a NotebookLM notebook about emojis, education, contextual symbol meaning, and AI interpretation.
 - [[learning/packets/agentic-ai-architectures-frameworks-operational-loops/packet|Agentic AI: Architectures, Frameworks, and Operational Loops]] - Pending-human-contact packet imported from a NotebookLM notebook about agentic AI, tool use, memory, planning, loop engineering, and operational risks.
+- [[learning/packets/abstraction-as-cognitive-gravity/packet|Abstraction As Cognitive Gravity]] - Drafted packet normalized from an AI conversation capture about C# semantics, abstraction, entropy, cognitive compression, and skills as software artifacts.
 
 ## Raw Sources
 
@@ -49,6 +50,7 @@ Content-oriented index for the vault.
 - [[raw/sources/david-west-object-thinking-notebook|Reflections on David West's Object Thinking Notebook]] - Source record for a NotebookLM packet export about David West's Object Thinking.
 - [[raw/sources/emoji-education-ai-communication-notebook|Decoding Digital Symbols Notebook]] - Source record for a NotebookLM packet export about emojis in education and AI communication.
 - [[raw/sources/agentic-ai-architectures-frameworks-operational-loops-notebook|Agentic AI Notebook]] - Source record for a NotebookLM packet export about agentic AI architectures, frameworks, loops, and operational risks.
+- [[raw/sources/software-learning-pipeline-chatgpt-share|Software Learning Pipeline ChatGPT Share]] - Source record for a shared ChatGPT conversation about C# semantics, entropy, abstraction, cognitive compression, and skills as software artifacts.
 
 ## Project Context
 
@@ -56,8 +58,10 @@ Content-oriented index for the vault.
 - [[docs/context/project-idea]] - Project vision, constraints, and open questions.
 - [[docs/planning/initial-milestones]] - Initial milestone sequence.
 - [[docs/planning/public-seed-extraction]] - Audit and plan for extracting a clean public seed from the current private working garden.
+- [[learning/gardening/gravity-map|Gravity Map]] - Experimental whole-garden map of current conceptual attractors, false gravity, and next learning moves.
 - [[schema/README|Protocol Schema]] - Rules, templates, prompts, and validation conventions.
 - [[docs/adr/README|Decision Log]] - Architectural decisions that shape the garden protocol.
+- [[schema/templates/map-of-curiosity|Map Of Curiosity Template]] - Optional artifact template for mapping recurring questions and next learning paths.
 - [[AGENTS]] - Portable instructions for AI agents operating on the garden.
 - [[skills/README|Agent Skills]] - Optional reusable agent skills for garden workflows.
 

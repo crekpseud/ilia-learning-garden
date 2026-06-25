@@ -172,6 +172,18 @@ _Avoid_: Import validation, promotion checklist
 A non-binding suggestion from an agent after gardening review, such as a next learning topic, a protocol adjustment, a link to inspect, a warning about drift, or a maintenance task.
 _Avoid_: Automatic promotion, command
 
+**AI Conversation Capture**:
+A packet export or inbox artifact created from an AI-assisted conversation when the reusable learning is in the session itself rather than in a separate source collection.
+_Avoid_: Chat dump, transcript import, trusted note
+
+**Map Of Curiosity**:
+An optional untrusted artifact that maps recurring questions, curiosity trails, nearby trusted notes, and possible next packets before deciding what deserves promotion.
+_Avoid_: Required gate, concept map, final synthesis
+
+**Gravity Map**:
+An experimental whole-garden artifact that names which ideas currently exert the strongest pull on future learning, including heavy attractors, forming constellations, and false gravity risks.
+_Avoid_: Importance ranking, priority list, promotion queue
+
 **Knowledge Gardener**:
 A person or agent who shapes conditions for knowledge growth through planting, pruning, linking, tending, and harvesting rather than imposing a rigid hierarchy.
 _Avoid_: Taxonomist, curator, file clerk

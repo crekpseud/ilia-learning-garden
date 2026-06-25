@@ -39,3 +39,4 @@ Architectural decisions that shape the Markdown-first learning protocol.
 - [[0014-use-separated-learning-packet-artifacts]]
 - [[0015-require-approval-for-concept-promotion]]
 - [[0016-use-topographical-reading-with-append-only-process-history]]
+- [[0030-use-maps-of-curiosity-as-optional-sense-making-artifacts]]

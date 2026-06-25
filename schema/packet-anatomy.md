@@ -14,6 +14,7 @@ learning/packets/<slug>/
     patches.md
   artifacts/
     gardening-review.md
+    curiosity-map.md
 ```
 
 ## Files
@@ -46,3 +47,6 @@ Packet-specific artifacts are materials attached to an already-normalized packet
 
 **artifacts/gardening-review.md**:
 Optional but recommended agent-authored sense-making review. It records what this packet means in the context of the whole garden, including unexpected links, emerging narratives, next learning paths, protocol pressure, and possible drift.
+
+**artifacts/curiosity-map.md**:
+Optional untrusted map for long-running conversations, reading histories, or recurring learning themes. It records question trails, nearby trusted notes, and possible next packets without promoting knowledge or replacing human contact.

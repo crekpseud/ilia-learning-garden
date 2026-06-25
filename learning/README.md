@@ -5,5 +5,6 @@ Untrusted learning artifacts, bridge materials, packet exports, learning packets
 ## Areas
 
 - [[learning/bridge/README|Bridge]] - locally prepared materials for external tools.
+- [[learning/gardening/README|Gardening]] - whole-garden experimental sense-making artifacts.
 - [[learning/inbox/README|Inbox]] - external tool outputs waiting for local normalization.
 - [[learning/packets/README|Packets]] - normalized learning packets.

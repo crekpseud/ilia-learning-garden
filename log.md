@@ -201,3 +201,27 @@ Normalized the repaired NotebookLM export into [[learning/packets/agentic-ai-arc
 ## [2026-06-25] seed.import | Learning Garden Capture Skill
 
 Imported [[skills/learning-garden-capture/SKILL]] from the public seed into the private working garden so local agents can capture reusable session insights into `learning/inbox/agent-captures/` without bypassing human-contact or promotion review.
+
+## [2026-06-25] protocol.decision | Maps Of Curiosity
+
+Recorded [[docs/adr/0030-use-maps-of-curiosity-as-optional-sense-making-artifacts]] after deciding that long-running conversations and recurring learning trails need an optional untrusted sense-making artifact before synthesis. Added [[schema/templates/map-of-curiosity]] and updated [[schema/packet-anatomy]] and [[CONTEXT]].
+
+## [2026-06-25] agent.capture | Entropy-Abstraction Cycle
+
+Captured the shared ChatGPT conversation [[raw/sources/software-learning-pipeline-chatgpt-share]] into [[learning/inbox/agent-captures/entropy-abstraction-cycle/packet-export]] with a companion [[learning/inbox/agent-captures/entropy-abstraction-cycle/curiosity-map]]. The capture remains untrusted inbox material pending normalization and promotion review.
+
+## [2026-06-25] packet.draft | Abstraction As Cognitive Gravity
+
+Normalized the AI conversation capture into [[learning/packets/abstraction-as-cognitive-gravity/packet]] after the user selected `Abstraction As Cognitive Gravity` as the primary framing. Drafted synthesis, candidate concepts, suggested patches, [[learning/packets/abstraction-as-cognitive-gravity/artifacts/curiosity-map]], and [[learning/packets/abstraction-as-cognitive-gravity/artifacts/gardening-review]]. The packet remains drafted for later user touch before promotion.
+
+## [2026-06-25] garden.experiment | Gravity Map
+
+Started a one-to-two-week [[learning/gardening/gravity-map|Gravity Map]] experiment to track conceptual attractors, false gravity, and forming constellations across the whole garden. Added [[schema/templates/gravity-map]] and linked the new untrusted gardening area from [[learning/README]].
+
+## [2026-06-25] garden.experiment.refine | Pulls Of Attention
+
+Refined [[learning/gardening/gravity-map]] and [[schema/templates/gravity-map]] after the user connected the experiment to a forest-bathing practice of noticing where attention wants to move. Reframed gravity as an embodied pull of attention rather than a strict physics metaphor.
+
+## [2026-06-25] garden.seed | Heideggerian Path Thinking
+
+Captured [[learning/gardening/seeds/heideggerian-path-thinking]] as an untrusted seed after the user connected pulls of attention to Heideggerian path thinking, forest paths, country paths, releasement, and clearings. Added `Path Thinking` as a constellation in [[learning/gardening/gravity-map]].
